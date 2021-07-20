@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'PPEiko-Medium';
+    src: url('../../../assets/fonts/PPEiko-Medium.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'PPEiko-Thin';
+    src: url('../../../assets/fonts/PPEiko-Thin.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}

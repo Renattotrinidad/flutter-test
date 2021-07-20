@@ -3,13 +3,14 @@
     <div class="container">
         <!-- Logo container-->
         <div>
-            <a class="logo" href="http://localhost:4200" *ngIf="navClass !== 'nav-light'">
-                <span class="l-dark logo-light-mode" height="24" alt="">MATERSANT</span>
+            <a class="logo" href="https://matersant.ima.com.gt/" *ngIf="navClass !== 'nav-light'">
+                <img src="assets/images/logo-matersant.png" class="l-dark logo-light-mode" height="60" alt="">
+                <span class="l-dark logo-light-mode" height="24" style="color: #020202 !important; font-size: 28px; font-family: 'PPEiko-Medium' !important;">MATERSANT</span>
                 <!-- <img src="assets/images/logo-dark.png" class="l-dark logo-light-mode" height="24" alt="">
                 <img src="assets/images/logo-light.png" class="logo-dark-mode" height="24" alt=""> -->
             </a>
-            <a class="logo" href="http://localhost:4300" *ngIf="navClass !== 'nav-light'">
-                <span class="l-dark logo-light-mode" height="24" alt="">MATERIA CURADA</span>
+            <a class="logo" href="https://materia.ima.com.gt/" *ngIf="navClass !== 'nav-light'">
+                <span class="l-dark logo-light-mode" height="24" style="color: #7a7878 !important; font-size: 28px; font-family: 'PPEiko-Medium' !important;">MATERIA CURADA</span>
                 <!-- <img src="assets/images/logo-dark.png" class="l-dark logo-light-mode" height="24" alt="">
               <img src="assets/images/logo-light.png" class="logo-dark-mode" height="24" alt=""> -->
             </a>
@@ -44,10 +45,10 @@
 
         <div id="navigation">
             <!-- Navigation Menu-->
-            <ul class="navigation-menu" [class]="navClass">
+            <ul class="navigation-menu" [class]="navClass" style="font-family: 'PPEiko-Thin' !important;">
                 <!-- <li><a routerLink="/" class="nav-link-ref">HOME</a></li> -->
                 <li class="has-submenu">
-                    <a href="javascript:void(0)" (click)="onMenuClick($event)">CUSTOM-MADE</a><span class="menu-arrow"></span>
+                    <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">CUSTOM-MADE</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <li class="nav-link-ref">
                             <a href="javascript:void(0)" routerLink="/">ART</a>
@@ -61,7 +62,7 @@
                     </ul>
                 </li>
                 <li class="has-submenu">
-                    <a href="javascript:void(0)" (click)="onMenuClick($event)">SERVICES</a><span class="menu-arrow"></span>
+                    <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">SERVICES</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <li class="nav-link-ref">
                             <a href="javascript:void(0)" routerLink="/">IMAGE CONSULTING</a>
@@ -75,7 +76,7 @@
                     </ul>
                 </li>
                 <li class="has-submenu">
-                    <a href="javascript:void(0)" (click)="onMenuClick($event)">SHOP</a><span class="menu-arrow"></span>
+                    <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">SHOP</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <li class="nav-link-ref">
                             <a href="javascript:void(0)" routerLink="/">MATERSANT</a>
@@ -92,7 +93,7 @@
                     </ul>
                 </li>
                 <li class="has-submenu">
-                    <a href="javascript:void(0)" (click)="onMenuClick($event)">ARCHIVE</a><span class="menu-arrow"></span>
+                    <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">ARCHIVE</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <li class="nav-link-ref">
                             <a href="javascript:void(0)" routerLink="/">2018</a>
@@ -108,7 +109,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a routerLink="#" class="nav-link-ref">ABOUT</a></li>
+                <li><a routerLink="#" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">ABOUT</a></li>
             </ul>
             <!--end navigation menu-->
             <!-- <div class="buy-menu-btn d-none">
