@@ -37,6 +37,11 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PortfolioGridThreeComponent } from './core/components/portfolio-grid-three/portfolio-grid-three.component';
 import { PortfolioMasonryTwoComponent } from './core/components/portfolio-masonry-two/portfolio-masonry-two.component';
+import { ShopProductDetailComponent } from './core/components/shop-product-detail/shop-product-detail.component';
+import { ShopCartComponent } from './core/components/shop-cart/shop-cart.component';
+import { AboutusTwoComponent } from './core/components/aboutus-two/aboutus-two.component';
+import { ArtComponent } from './core/components/art/art.component';
+import { CustomMadeComponent } from './core/components/custom-made-art/custom-made.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -55,6 +60,11 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     ShopProductsComponent,
     PortfolioGridThreeComponent,
     PortfolioMasonryTwoComponent,
+    ShopProductDetailComponent,
+    ShopCartComponent,
+    AboutusTwoComponent,
+    ArtComponent,
+    CustomMadeComponent,
   ],
   imports: [
     BrowserModule,

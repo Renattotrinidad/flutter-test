@@ -1,0 +1,863 @@
+
+<!-- Navbar STart -->
+<header id="topnav" class="defaultscroll sticky" (window:scroll)="windowScroll()">
+    <div class="container">
+      <!-- Logo container-->
+      <div>
+        <a class="logo" [ngxScrollTo]="'#home'">
+          <img src="" height="24" alt="">
+        </a>
+      </div>
+      
+      <!--end login button-->
+      <!-- End Logo container-->
+      <div class="menu-extras">
+        <div class="menu-item">
+          <!-- Mobile menu toggle-->
+          <a class="navbar-toggle" (click)="toggleMenu()" [ngClass]="{'open': isCondensed === true}">
+            <div class="lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+          <!-- End mobile menu toggle-->
+        </div>
+      </div>
+  
+      <div id="navigation">
+        <!-- Navigation Menu-->
+        <ul class="navigation-menu">
+          <li class="has-submenu" [ngClass]="{'active':currentSection === '1'}">
+            <a href="javascript: void(0);" [ngxScrollTo]="'#1'"></a>
+          </li>
+          <li class="has-submenu" [ngClass]="{'active':currentSection === '2'}">
+            <a href="javascript: void(0);" [ngxScrollTo]="'#2'"></a>
+          </li>
+          <li class="has-submenu" [ngClass]="{'active':currentSection === '3'}">
+            <a href="javascript: void(0);" [ngxScrollTo]="'#3'"></a>
+          </li>
+          <li class="has-submenu" [ngClass]="{'active':currentSection === '4'}">
+            <a href="javascript: void(0);" [ngxScrollTo]="'#4'"></a>
+          </li>
+          <li class="has-submenu" [ngClass]="{'active':currentSection === '5'}">
+            <a href="javascript: void(0);" [ngxScrollTo]="'#5'"></a>
+          </li>
+          <li class="has-submenu" [ngClass]="{'active':currentSection === '6'}">
+            <a href="javascript: void(0);" [ngxScrollTo]="'#6'"></a>
+          </li>
+          <li class="has-submenu" [ngClass]="{'active':currentSection === '7'}">
+            <a href="javascript: void(0);" [ngxScrollTo]="'#7'"></a>
+          </li>
+          <li class="has-submenu" [ngClass]="{'active':currentSection === '8'}">
+            <a href="javascript: void(0);" [ngxScrollTo]="'#8'"></a>
+          </li>
+          
+        </ul>
+        <!--end navigation menu-->
+      </div>
+      <!--end navigation-->
+    </div>
+    <!--end container-->
+  </header>
+  <!--end header-->
+  <!-- Navbar End -->
+  <div appScrollspy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
+   
+    <!-- home Start -->
+    <section class="section pb-0" id="1">
+      <div style="background-color: #ffe1AE ;width:1920px; height:1020px;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <div class="section-title mb-4 pb-2">
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+          <app-services [servicesData]="servicesData"></app-services>
+        </div>
+        <!--end container-->
+    
+        <div class="container mt-100 mt-60">
+         
+            <div class="col-lg-5 col-md-6">
+        
+            </div>
+            <!--end col-->
+    
+            <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <div class="section-title ms-lg-5">
+                <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">CUSTOM MADE -ART-</h4>
+                <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">Ciao art lover, welcome to our MATERSANT custom art portal. 
+                    Once you complete this short and sweet form, we’ll assess your request and contact you with a quote.</p>
+                    <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">Let’s get started 🦑:</p>
+                    
+                <ul data-aos="fade-up" data-aos-duration="1800">
+                  <li class="mb-0"><span class="text-primary h5 me-2"></span>Name:</li> 
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                 <!-- <li class="mb-0"><span class="text-primary h5 me-2"></span>Name: <input type = "text" required> </li>-->
+                  <li class="mb-0"><span class="text-primary h5 me-2"></span>Last Name:</li>
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <li class="mb-0"><span class="text-primary h5 me-2"></span>Country: </li>
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <li class="mb-0"><span class="text-primary h5 me-2"></span>Email: </li>
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Tick this box if you would like to be  <a href="javascript:void(0)"
+                      class="text-primary">added to our fabulous mailing list. </a></label>
+            
+                </ul>
+                <div class="mt-4" data-aos="fade-up" data-aos-duration="2200">
+                  
+                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#2'">Next <i
+                      class="uil uil-angle-right-b"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+       
+        <!--end container-->
+      </div>
+    
+     <!-- home Start -->
+     <section class="section pb-0" id="2">
+      <div style="background-color: #DCF9E4 ;width:1920px; height:1020px;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <div class="section-title mb-4 pb-2">
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+          <app-services [servicesData]="servicesData"></app-services>
+        </div>
+        <!--end container-->
+    
+        <div class="container mt-100 mt-60">
+         
+            <div class="col-lg-5 col-md-6">
+        
+            </div>
+            <!--end col-->
+            <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <div class="section-title ms-lg-5">
+                <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">CUSTOM MADE -ART-</h4>
+                <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2.What type of art are you interested in? </p>
+                   
+                <ul data-aos="fade-up" data-aos-duration="1800">
+
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Ink Illustration  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Hand Painted  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Digital  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Sculpture </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Photography </label>
+                  <br>
+                 <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <br>
+                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2a.What size are you thinking for this illustration? </p>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Small (A4: 21 x 29.7 cm)</label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Medium (A2: 42 x 59.4 cm)  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Large (A1: 59.4 x 84.1 cm)</label>
+                  <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <br>
+                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2b.What size are you thinking for this hand painted work?</p>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Small (30cm x 40cm)</label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Medium (60cm x 70cm)  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Large (100cm x 110cm) </label>
+                  <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <br>
+                   <!--<p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2c. What dimensions work best for this digital piece?   </p>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Small (30cm x 40cm)</label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Medium (60cm x 70cm)  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Large (100cm x 110cm) </label>
+                  <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <br>
+                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2d. How big or small are you thinking? </p>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Small (e.g., the size of a head pillow)</label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Medium (e.g., the size of an oven) </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Large (e.g., the size of a fridge)</label>
+                  <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <br>
+                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2e. What size of photography are you thinking? </p>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Small (A4: 21 x 29.7 cm)</label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Medium (A2: 42 x 59.4 cm)  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Large (A1: 59.4 x 84.1 cm)</label>
+                  <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                <br> 
+              <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2f. This sounds like a very special artwork, tell us more about it! Don’t forget to mention size:</p>
+             <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea> -->
+                
+                </ul>
+                 
+                <div class="mt-4" data-aos="fade-up" data-aos-duration="2200">    
+                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded" [ngxScrollTo]="'#1'" > Back</a>
+                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#3'" >Next <i
+                      class="uil uil-angle-right-b"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+       
+        <!--end container-->
+      </div>
+    
+        <div class="container mt-100 mt-60">
+          <div class="p-4 rounded bg-light shadow" data-aos="fade-up" data-aos-duration="1400">
+            <div class="row align-items-center">
+              <div class="col-sm-7">
+                <div class="text-sm-left">
+                  
+                </div>
+              </div>
+              <!--end col-->
+    
+              <div class="col-sm-5 mt-4 mt-sm-0">
+                <div class="text-sm-end">
+                  
+                </div>
+              </div>
+              <!--end col-->
+            </div>
+            <!--end row -->
+          </div>
+        </div>
+        <!--end container-->
+        
+
+           <!-- home Start -->
+    <section class="section pb-0" id="3">
+      <div style="background-color: #f5dcf9 ;width:1920px; height:1020px;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <div class="section-title mb-4 pb-2">
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+          <app-services [servicesData]="servicesData"></app-services>
+        </div>
+        <!--end container-->
+    
+        <div class="container mt-100 mt-60">
+         
+            <div class="col-lg-5 col-md-6">
+        
+            </div>
+            <!--end col-->
+    
+            <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <div class="section-title ms-lg-5">
+                <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">CUSTOM MADE -ART-</h4>
+                <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">3.What theme fits your custom artwork more ?  </p>
+                   
+                <ul data-aos="fade-up" data-aos-duration="1800">
+
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Self-portrait  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Deities   </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Spirituality   </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Contemporary abstract</label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">¡Surprise me!  🌝 </label>
+                  <br>
+                 <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  
+                </ul>
+                <div class="mt-4" data-aos="fade-up" data-aos-duration="2200">
+                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded" [ngxScrollTo]="'#2'" > Back</a>
+                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#4'">Next <i
+                      class="uil uil-angle-right-b"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+       
+        <!--end container-->
+      </div>
+    
+        <div class="container mt-100 mt-60">
+          <div class="p-4 rounded bg-light shadow" data-aos="fade-up" data-aos-duration="1400">
+            <div class="row align-items-center">
+              <div class="col-sm-7">
+                <div class="text-sm-left">
+                  
+                </div>
+              </div>
+              <!--end col-->
+    
+              <div class="col-sm-5 mt-4 mt-sm-0">
+                <div class="text-sm-end">
+                  
+                </div>
+              </div>
+              <!--end col-->
+            </div>
+            <!--end row -->
+          </div>
+        </div>
+        <!--end container-->
+
+
+
+           <!-- home Start -->
+    <section class="section pb-0" id="4">
+      <div style="background-color: #a0fc8d   ;width:1920px; height:1020px;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <div class="section-title mb-4 pb-2">
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+          <app-services [servicesData]="servicesData"></app-services>
+        </div>
+        <!--end container-->
+    
+        <div class="container mt-100 mt-60">
+         
+            <div class="col-lg-5 col-md-6">
+        
+            </div>
+            <!--end col-->
+    
+            <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <div class="section-title ms-lg-5">
+                <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">CUSTOM MADE -ART-</h4>
+                <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4.In what space will this MATERSANT thrive in?  </p>
+                   
+                <ul data-aos="fade-up" data-aos-duration="1800">
+
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Outdoors  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Indoors  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Both Outdoors & Indoors   </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Virtual space</label>
+                  <br>
+                  <br>
+                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4a. Outdoors can mean many things, so for us it’s important to know about the elements that will interact with the custom artwork.
+                    Check all that apply:  </p>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Exposure to direct sunlight</label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Water exposure (e.g., rain)  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Direct winds</label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Dust</label>
+                  <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <br>
+                  <p class="text" data-aos="fade-up" data-aos-duration="1400">You can also upload a photo of the space or spot you have in mind (optional):   <button mat-stroked-button="primary" >JPG, PNG, PDF</button>
+                  <br>
+                  <!--<p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4b. Sweet, Indoors is a great shout.  What space did you have in mind?   </p>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Living room </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Bedroom </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Kitchen</label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Office-Studio </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Foyer  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">4c. Ooh lala, a versatile custom piece, how splendid.
+                  <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <br>
+                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4d. Virtual, digital, dimensional, tell us more.  </p>
+                  <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <br> -->
+                </ul>
+                <div class="mt-4" data-aos="fade-up" data-aos-duration="2200">
+                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded" [ngxScrollTo]="'#3'" > Back</a>  
+                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#5'" >Next <i
+                      class="uil uil-angle-right-b"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+       
+        <!--end container-->
+      </div>
+    
+        <div class="container mt-100 mt-60">
+          <div class="p-4 rounded bg-light shadow" data-aos="fade-up" data-aos-duration="1400">
+            <div class="row align-items-center">
+              <div class="col-sm-7">
+                <div class="text-sm-left">
+                  
+                </div>
+              </div>
+              <!--end col-->
+    
+              <div class="col-sm-5 mt-4 mt-sm-0">
+                <div class="text-sm-end">
+                  
+                </div>
+              </div>
+              <!--end col-->
+            </div>
+            <!--end row -->
+          </div>
+        </div>
+        <!--end container-->
+
+
+           <!-- home Start -->
+    <section class="section pb-0" id="5">
+      <div style="background-color: #b0f2c2;width:1920px; height:1020px;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <div class="section-title mb-4 pb-2">
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+          <app-services [servicesData]="servicesData"></app-services>
+        </div>
+        <!--end container-->
+    
+        <div class="container mt-100 mt-60">
+         
+            <div class="col-lg-5 col-md-6">
+        
+            </div>
+            <!--end col-->
+    
+            <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <div class="section-title ms-lg-5">
+                <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">CUSTOM MADE -ART-</h4>
+                <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2.What type of art are you interested in? </p>
+                   
+                <ul data-aos="fade-up" data-aos-duration="1800">
+
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Ink Illustration  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Hand Painted  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Digital  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Sculpture </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Photography </label>
+                  <br>
+                 <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <br>
+                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2a.What size are you thinking for this illustration? </p>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Small (A4: 21 x 29.7 cm)</label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Medium (A2: 42 x 59.4 cm)  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Large (A1: 59.4 x 84.1 cm)</label>
+                  <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <br>
+                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2b.What size are you thinking for this hand painted work?</p>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Small (30cm x 40cm)</label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Medium (60cm x 70cm)  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Large (100cm x 110cm) </label>
+                  <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <br>
+                   <!--<p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2c. What dimensions work best for this digital piece?   </p>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Small (30cm x 40cm)</label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Medium (60cm x 70cm)  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Large (100cm x 110cm) </label>
+                  <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <br>
+                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2d. How big or small are you thinking? </p>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Small (e.g., the size of a head pillow)</label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Medium (e.g., the size of an oven) </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Large (e.g., the size of a fridge)</label>
+                  <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <br>
+                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2e. What size of photography are you thinking? </p>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Small (A4: 21 x 29.7 cm)</label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Medium (A2: 42 x 59.4 cm)  </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">Large (A1: 59.4 x 84.1 cm)</label>
+                  <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                   <br> 
+                    <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2f. This sounds like a very special artwork, tell us more about it! Don’t forget to mention size:</p>
+                  <br>
+                  <span class="text-primary h5 me-2"></span>Other:
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea> -->
+                
+                </ul>
+                
+                <div class="mt-4" data-aos="fade-up" data-aos-duration="2200">
+                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded" [ngxScrollTo]="'#4'" > Back</a>
+                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#6'" >Next <i
+                      class="uil uil-angle-right-b"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+       
+        <!--end container-->
+      </div>
+    
+        <div class="container mt-100 mt-60">
+          <div class="p-4 rounded bg-light shadow" data-aos="fade-up" data-aos-duration="1400">
+            <div class="row align-items-center">
+              <div class="col-sm-7">
+                <div class="text-sm-left">
+                  
+                </div>
+              </div>
+              <!--end col-->
+    
+              <div class="col-sm-5 mt-4 mt-sm-0">
+                <div class="text-sm-end">
+                  
+                </div>
+              </div>
+              <!--end col-->
+            </div>
+            <!--end row -->
+          </div>
+        </div>
+        <!--end container-->
+
+
+
+           <!-- home Start -->
+    <section class="section pb-0" id="6">
+      <div style="background-color: #ffe1AE  ;width:1920px; height:1020px;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <div class="section-title mb-4 pb-2">
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+          <app-services [servicesData]="servicesData"></app-services>
+        </div>
+        <!--end container-->
+    
+        <div class="container mt-100 mt-60">
+         
+            <div class="col-lg-5 col-md-6">
+        
+            </div>
+            <!--end col-->
+            <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <div class="section-title ms-lg-5">
+                <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">CUSTOM MADE -ART-</h4>
+                <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">5. Would you like your custom artwork framed? </p>
+                   
+                <ul data-aos="fade-up" data-aos-duration="1800">
+
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> Yes </label>
+                  <br>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> No  </label>
+                  <br>
+            
+                </ul>
+                <div class="mt-4" data-aos="fade-up" data-aos-duration="2200">
+                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded" [ngxScrollTo]="'#5'" > Back</a>
+                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#7'" >Next <i
+                      class="uil uil-angle-right-b"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+       
+        <!--end container-->
+      </div>
+    
+        <div class="container mt-100 mt-60">
+          <div class="p-4 rounded bg-light shadow" data-aos="fade-up" data-aos-duration="1400">
+            <div class="row align-items-center">
+              <div class="col-sm-7">
+                <div class="text-sm-left">
+                  
+                </div>
+              </div>
+              <!--end col-->
+    
+              <div class="col-sm-5 mt-4 mt-sm-0">
+                <div class="text-sm-end">
+                  
+                </div>
+              </div>
+              <!--end col-->
+            </div>
+            <!--end row -->
+          </div>
+        </div>
+        <!--end container-->
+
+
+           <!-- home Start -->
+         <section class="section pb-0" id="7">
+       <div style="background-color: #FAFCAF ;width:1920px; height:1020px;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <div class="section-title mb-4 pb-2">
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+          <app-services [servicesData]="servicesData"></app-services>
+        </div>
+        <!--end container-->
+    
+        <div class="container mt-100 mt-60">
+         
+            <div class="col-lg-5 col-md-6">
+        
+            </div>
+            <!--end col-->
+    
+            <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <div class="section-title ms-lg-5">
+                <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">CUSTOM MADE -ART-</h4>
+                <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">6.Anything else you may want to add? </p>
+                   
+                <ul data-aos="fade-up" data-aos-duration="1800">
+                
+                <span class="text-primary h5 me-2"></span>Other:
+                <textarea rows="2" cols="80" class="form-control" placeholder=""></textarea>
+            
+                </ul>
+                <div class="mt-4" data-aos="fade-up" data-aos-duration="2200">
+                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded" [ngxScrollTo]="'#6'" > Back</a>
+                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#8'"> SUBMIT FORM <i
+                      class="uil uil-angle-right-b"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+       
+        <!--end container-->
+      </div>
+    
+        <div class="container mt-100 mt-60">
+          <div class="p-4 rounded bg-light shadow" data-aos="fade-up" data-aos-duration="1400">
+            <div class="row align-items-center">
+              <div class="col-sm-7">
+                <div class="text-sm-left">
+                  
+                </div>
+              </div>
+              <!--end col-->
+    
+              <div class="col-sm-5 mt-4 mt-sm-0">
+                <div class="text-sm-end">
+                  
+                  
+                </div>
+                
+              </div>
+              <!--end col-->
+            </div>
+            <!--end row -->
+          </div>
+        </div>
+        <!--end container-->
+    
+     <!-- home Start -->
+     <section class="section pb-0" id="8">
+      <div style="background-color: #f5dcf9 ;width:1920px; height:1020px;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <div class="section-title mb-4 pb-2">
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+          <app-services [servicesData]="servicesData"></app-services>
+        </div>
+        <!--end container-->
+    
+        <div class="container mt-100 mt-60">
+         
+            <div class="col-lg-5 col-md-6">
+        
+            </div>
+            <!--end col-->
+    
+            <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+              <div class="section-title ms-lg-5">
+                <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">
+                  Thank you for submitting your MATERSANT custom art form. We’ll get back to you as soon as possible. 🐉
+                  In the meantime, take a look at the cool stuff we have in our shop.</h4>
+                
+                   
+                <ul data-aos="fade-up" data-aos-duration="1800">
+ 
+                  
+                </ul>
+                
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+       
+        <!--end container-->
+      </div>
+    
+        <div class="container mt-100 mt-60">
+          <div class="p-4 rounded bg-light shadow" data-aos="fade-up" data-aos-duration="1400">
+            <div class="row align-items-center">
+              <div class="col-sm-7">
+                <div class="text-sm-left">
+                  
+                </div>
+              </div>
+              <!--end col-->
+    
+              <div class="col-sm-5 mt-4 mt-sm-0">
+                <div class="text-sm-end">
+                  
+                </div>
+              </div>
+              <!--end col-->
+            </div>
+            <!--end row -->
+          </div>
+        </div>
+        <!--end container-->

@@ -1,0 +1,9 @@
+.fade-up input {
+    width: 100;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 28p;
+    border: none; 
+    outline: 0px; 
+}
