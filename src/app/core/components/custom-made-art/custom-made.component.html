@@ -67,7 +67,6 @@
     <!-- home Start -->
     <section class="section pb-0" id="1">
       <div style="background-color: #ffe1AE ;width:1920px; height:1020px;">
-        <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 text-center">
               <div class="section-title mb-4 pb-2">
@@ -77,20 +76,14 @@
           </div>
           <!--end row-->
           <app-services [servicesData]="servicesData"></app-services>
-        </div>
-        <!--end container-->
     
-        <div class="container mt-100 mt-60">
-         
-            <div class="col-lg-5 col-md-6">
         
-            </div>
-            <!--end col-->
-    
+          
+          <div class="container mt-100 mt-60">
             <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
               <div class="section-title ms-lg-5">
                 <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">CUSTOM MADE -ART-</h4>
-                <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">Ciao art lover, welcome to our MATERSANT custom art portal. 
+                <p class="text-muted" data-aos="fade-up" data-aos-duration="1000">Ciao art lover, welcome to our MATERSANT custom art portal. 
                     Once you complete this short and sweet form, we’ll assess your request and contact you with a quote.</p>
                     <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">Let’s get started 🦑:</p>
                     
@@ -119,14 +112,13 @@
             <!--end col-->
           </div>
           <!--end row-->
-       
         <!--end container-->
       </div>
     
      <!-- home Start -->
      <section class="section pb-0" id="2">
       <div style="background-color: #DCF9E4 ;width:1920px; height:1020px;">
-        <div class="container">
+        
           <div class="row justify-content-center">
             <div class="col-12 text-center">
               <div class="section-title mb-4 pb-2">
@@ -136,9 +128,7 @@
           </div>
           <!--end row-->
           <app-services [servicesData]="servicesData"></app-services>
-        </div>
-        <!--end container-->
-    
+      
         <div class="container mt-100 mt-60">
          
             <div class="col-lg-5 col-md-6">
@@ -151,26 +141,60 @@
                 <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2.What type of art are you interested in? </p>
                    
                 <ul data-aos="fade-up" data-aos-duration="1800">
-
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Ink Illustration  </label>
+                  
+                  
+                  <input   class="form-check-input" type="checkbox" ng-model="2a" for="flexCheckDefault"> Ink Illustration 
+                  
                   <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Hand Painted  </label>
+                  <input   class="form-check-input" type="checkbox" ng-model="2b" for="flexCheckDefault"> Hand Painted  
                   <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Digital  </label>
+                  <input   class="form-check-input" type="checkbox" ng-model="2c" for="flexCheckDefault">Digital 
                   <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Sculpture </label>
+                  <input   class="form-check-input" type="checkbox" ng-model="2d" for="flexCheckDefault">>Sculpture
                   <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Photography </label>
+                  <input   class="form-check-input" type="checkbox" ng-model="2e" for="flexCheckDefault">Photography
                   <br>
                  <span class="text-primary h5 me-2"></span>Other:
                   <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
                   <br>
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2a.What size are you thinking for this illustration? </p>
+                  
+                </ul>
+                 
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a class="text-dark align-items-center">
+                        <span class="pro-icons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                          </svg></span>
+
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#1'">Back </a>
+                        <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
+                          alt="">
+                      </a>
+
+                      <a class="text-dark align-items-center">
+                        <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
+                          alt="">
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#3'">Next </a>
+                        <span class="pro-icons"><svg xmlns="" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                          </svg></span>
+                      </a>
+                    </div>
+                  </div>
+                  <!--end col-->
+                </div>
+                <!--end row-->
+                
+
+              </div>
+              <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2a.What size are you thinking for this illustration? </p>
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                   <label class="form-check-label" for="flexCheckDefault"> Small (A4: 21 x 29.7 cm)</label>
                   <br>
@@ -240,40 +264,6 @@
                   <span class="text-primary h5 me-2"></span>Other:
                   <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea> -->
                 
-                </ul>
-                 
-                <div class="row align-items-center">
-                  <div class="col-12">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <a class="text-dark align-items-center">
-                        <span class="pro-icons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm">
-                            <line x1="19" y1="12" x2="5" y2="12"></line>
-                            <polyline points="12 19 5 12 12 5"></polyline>
-                          </svg></span>
-                        <span class="text-muted d-none d-md-inline-block" [ngxScrollTo]="'#1'" > Back</span>
-                        <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
-                          alt="">
-                      </a>
-
-                      <a class="text-dark align-items-center">
-                        <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
-                          alt="">
-                        <span class="text-muted d-none d-md-inline-block"[ngxScrollTo]="'#3'"> Next</span>
-                        <span class="pro-icons"><svg xmlns="" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                          </svg></span>
-                      </a>
-                    </div>
-                  </div>
-                  <!--end col-->
-                </div>
-                <!--end row-->
-
-              </div>
             </div>
             <!--end col-->
           </div>
@@ -281,30 +271,7 @@
        
         <!--end container-->
       </div>
-    
-        <div class="container mt-100 mt-60">
-          <div class="p-4 rounded bg-light shadow" data-aos="fade-up" data-aos-duration="1400">
-            <div class="row align-items-center">
-              <div class="col-sm-7">
-                <div class="text-sm-left">
-                  
-                </div>
-              </div>
-              <!--end col-->
-    
-              <div class="col-sm-5 mt-4 mt-sm-0">
-                <div class="text-sm-end">
-                  
-                </div>
-              </div>
-              <!--end col-->
-            </div>
-            <!--end row -->
-          </div>
-        </div>
-        <!--end container-->
-        
-
+  
            <!-- home Start -->
     <section class="section pb-0" id="3">
       <div style="background-color: #f5dcf9 ;width:1920px; height:1020px;">
@@ -363,7 +330,7 @@
                             <line x1="19" y1="12" x2="5" y2="12"></line>
                             <polyline points="12 19 5 12 12 5"></polyline>
                           </svg></span>
-                        <span class="text-muted d-none d-md-inline-block" [ngxScrollTo]="'#2'" > Back</span>
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#2'">Back </a>
                         <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
                           alt="">
                       </a>
@@ -371,7 +338,7 @@
                       <a class="text-dark align-items-center">
                         <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
                           alt="">
-                        <span class="text-muted d-none d-md-inline-block"[ngxScrollTo]="'#4'"> Next </span>
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#4'">Next </a>
                         <span class="pro-icons"><svg xmlns="" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
@@ -393,30 +360,6 @@
        
         <!--end container-->
       </div>
-    
-        <div class="container mt-100 mt-60">
-          <div class="p-4 rounded bg-light shadow" data-aos="fade-up" data-aos-duration="1400">
-            <div class="row align-items-center">
-              <div class="col-sm-7">
-                <div class="text-sm-left">
-                  
-                </div>
-              </div>
-              <!--end col-->
-    
-              <div class="col-sm-5 mt-4 mt-sm-0">
-                <div class="text-sm-end">
-                  
-                </div>
-              </div>
-              <!--end col-->
-            </div>
-            <!--end row -->
-          </div>
-        </div>
-        <!--end container-->
-
-
 
            <!-- home Start -->
     <section class="section pb-0" id="4">
@@ -461,51 +404,7 @@
                   <label class="form-check-label" for="flexCheckDefault">Virtual space</label>
                   <br>
                   <br>
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4a. Outdoors can mean many things, so for us it’s important to know about the elements that will interact with the custom artwork.
-                    Check all that apply:  </p>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Exposure to direct sunlight</label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Water exposure (e.g., rain)  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Direct winds</label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Dust</label>
-                  <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                  <br>
-                  <p class="text" data-aos="fade-up" data-aos-duration="1400">You can also upload a photo of the space or spot you have in mind (optional):   <button mat-stroked-button="primary" >JPG, PNG, PDF</button>
-                  <br>
-                  <!--<p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4b. Sweet, Indoors is a great shout.  What space did you have in mind?   </p>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Living room </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Bedroom </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Kitchen</label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Office-Studio </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Foyer  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">4c. Ooh lala, a versatile custom piece, how splendid.
-                  <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                  <br>
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4d. Virtual, digital, dimensional, tell us more.  </p>
-                  <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                  <br> -->
+        
                 </ul>
                 <div class="row align-items-center">
                   <div class="col-12">
@@ -516,7 +415,7 @@
                             <line x1="19" y1="12" x2="5" y2="12"></line>
                             <polyline points="12 19 5 12 12 5"></polyline>
                           </svg></span>
-                        <span class="text-muted d-none d-md-inline-block" [ngxScrollTo]="'#3'" > Back</span>
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#3'">Back </a>
                         <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
                           alt="">
                       </a>
@@ -524,7 +423,7 @@
                       <a class="text-dark align-items-center">
                         <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
                           alt="">
-                        <span class="text-muted d-none d-md-inline-block"[ngxScrollTo]="'#5'"> Next </span>
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#5'">Next </a>
                         <span class="pro-icons"><svg xmlns="" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
@@ -539,6 +438,51 @@
                 <!--end row-->
 
               </div>
+              <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4a. Outdoors can mean many things, so for us it’s important to know about the elements that will interact with the custom artwork.
+                Check all that apply:  </p>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault"> Exposure to direct sunlight</label>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault"> Water exposure (e.g., rain)  </label>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Direct winds</label>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Dust</label>
+              <br>
+              <span class="text-primary h5 me-2"></span>Other:
+              <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+              <br>
+              <p class="text" data-aos="fade-up" data-aos-duration="1400">You can also upload a photo of the space or spot you have in mind (optional):   <button mat-stroked-button="primary" >JPG, PNG, PDF</button>
+              <br>
+              <!--<p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4b. Sweet, Indoors is a great shout.  What space did you have in mind?   </p>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Living room </label>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault"> Bedroom </label>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Kitchen</label>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Office-Studio </label>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Foyer  </label>
+              <br>
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">4c. Ooh lala, a versatile custom piece, how splendid.
+              <br>
+              <span class="text-primary h5 me-2"></span>Other:
+              <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+              <br>
+              <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4d. Virtual, digital, dimensional, tell us more.  </p>
+              <br>
+              <span class="text-primary h5 me-2"></span>Other:
+              <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+              <br> -->
             </div>
             <!--end col-->
           </div>
@@ -546,215 +490,11 @@
        
         <!--end container-->
       </div>
-    
-        <div class="container mt-100 mt-60">
-          <div class="p-4 rounded bg-light shadow" data-aos="fade-up" data-aos-duration="1400">
-            <div class="row align-items-center">
-              <div class="col-sm-7">
-                <div class="text-sm-left">
-                  
-                </div>
-              </div>
-              <!--end col-->
-    
-              <div class="col-sm-5 mt-4 mt-sm-0">
-                <div class="text-sm-end">
-                  
-                </div>
-              </div>
-              <!--end col-->
-            </div>
-            <!--end row -->
-          </div>
-        </div>
-        <!--end container-->
 
-
+           <!-- home Start -->
+    
            <!-- home Start -->
     <section class="section pb-0" id="5">
-      <div style="background-color: #b0f2c2;width:1920px; height:1020px;">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 text-center">
-              <div class="section-title mb-4 pb-2">
-              </div>
-            </div>
-            <!--end col-->
-          </div>
-          <!--end row-->
-          <app-services [servicesData]="servicesData"></app-services>
-        </div>
-        <!--end container-->
-    
-        <div class="container mt-100 mt-60">
-         
-            <div class="col-lg-5 col-md-6">
-        
-            </div>
-            <!--end col-->
-    
-            <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-              <div class="section-title ms-lg-5">
-                <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">CUSTOM MADE -ART-</h4>
-                <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2.What type of art are you interested in? </p>
-                   
-                <ul data-aos="fade-up" data-aos-duration="1800">
-
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Ink Illustration  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Hand Painted  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Digital  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Sculpture </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Photography </label>
-                  <br>
-                 <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                  <br>
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2a.What size are you thinking for this illustration? </p>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Small (A4: 21 x 29.7 cm)</label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Medium (A2: 42 x 59.4 cm)  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Large (A1: 59.4 x 84.1 cm)</label>
-                  <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                  <br>
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2b.What size are you thinking for this hand painted work?</p>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Small (30cm x 40cm)</label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Medium (60cm x 70cm)  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Large (100cm x 110cm) </label>
-                  <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                  <br>
-                   <!--<p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2c. What dimensions work best for this digital piece?   </p>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Small (30cm x 40cm)</label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Medium (60cm x 70cm)  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Large (100cm x 110cm) </label>
-                  <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                  <br>
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2d. How big or small are you thinking? </p>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Small (e.g., the size of a head pillow)</label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Medium (e.g., the size of an oven) </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Large (e.g., the size of a fridge)</label>
-                  <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                  <br>
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2e. What size of photography are you thinking? </p>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Small (A4: 21 x 29.7 cm)</label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Medium (A2: 42 x 59.4 cm)  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Large (A1: 59.4 x 84.1 cm)</label>
-                  <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                   <br> 
-                    <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2f. This sounds like a very special artwork, tell us more about it! Don’t forget to mention size:</p>
-                  <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea> -->
-                
-                </ul>
-                <div class="row align-items-center">
-                  <div class="col-12">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <a class="text-dark align-items-center">
-                        <span class="pro-icons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm">
-                            <line x1="19" y1="12" x2="5" y2="12"></line>
-                            <polyline points="12 19 5 12 12 5"></polyline>
-                          </svg></span>
-                        <span class="text-muted d-none d-md-inline-block" [ngxScrollTo]="'#4'" > Back</span>
-                        <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
-                          alt="">
-                      </a>
-
-                      <a class="text-dark align-items-center">
-                        <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
-                          alt="">
-                        <span class="text-muted d-none d-md-inline-block"[ngxScrollTo]="'#6'"> Next </span>
-                        <span class="pro-icons"><svg xmlns="" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                          </svg></span>
-                      </a>
-                    </div>
-                  </div>
-                  <!--end col-->
-                </div>
-                <!--end row-->
-
-              </div>
-            </div>
-            <!--end col-->
-          </div>
-          <!--end row-->
-       
-        <!--end container-->
-      </div>
-    
-        <div class="container mt-100 mt-60">
-          <div class="p-4 rounded bg-light shadow" data-aos="fade-up" data-aos-duration="1400">
-            <div class="row align-items-center">
-              <div class="col-sm-7">
-                <div class="text-sm-left">
-                  
-                </div>
-              </div>
-              <!--end col-->
-    
-              <div class="col-sm-5 mt-4 mt-sm-0">
-                <div class="text-sm-end">
-                  
-                </div>
-              </div>
-              <!--end col-->
-            </div>
-            <!--end row -->
-          </div>
-        </div>
-        <!--end container-->
-
-
-
-           <!-- home Start -->
-    <section class="section pb-0" id="6">
       <div style="background-color: #ffe1AE  ;width:1920px; height:1020px;">
         <div class="container">
           <div class="row justify-content-center">
@@ -799,7 +539,7 @@
                             <line x1="19" y1="12" x2="5" y2="12"></line>
                             <polyline points="12 19 5 12 12 5"></polyline>
                           </svg></span>
-                        <span class="text-muted d-none d-md-inline-block" [ngxScrollTo]="'#5'" > Back</span>
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#4'">Back </a>
                         <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
                           alt="">
                       </a>
@@ -807,7 +547,7 @@
                       <a class="text-dark align-items-center">
                         <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
                           alt="">
-                        <span class="text-muted d-none d-md-inline-block"[ngxScrollTo]="'#7'"> Next</span>
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#6'">Next </a>
                         <span class="pro-icons"><svg xmlns="" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
@@ -829,32 +569,10 @@
        
         <!--end container-->
       </div>
-    
-        <div class="container mt-100 mt-60">
-          <div class="p-4 rounded bg-light shadow" data-aos="fade-up" data-aos-duration="1400">
-            <div class="row align-items-center">
-              <div class="col-sm-7">
-                <div class="text-sm-left">
-                  
-                </div>
-              </div>
-              <!--end col-->
-    
-              <div class="col-sm-5 mt-4 mt-sm-0">
-                <div class="text-sm-end">
-                  
-                </div>
-              </div>
-              <!--end col-->
-            </div>
-            <!--end row -->
-          </div>
-        </div>
-        <!--end container-->
-
+  
 
            <!-- home Start -->
-         <section class="section pb-0" id="7">
+         <section  *ngIf="" class="section pb-0" id="6">
        <div style="background-color: #FAFCAF ;width:1920px; height:1020px;">
         <div class="container">
           <div class="row justify-content-center">
@@ -896,7 +614,7 @@
                             <line x1="19" y1="12" x2="5" y2="12"></line>
                             <polyline points="12 19 5 12 12 5"></polyline>
                           </svg></span>
-                        <span class="text-muted d-none d-md-inline-block" [ngxScrollTo]="'#6'" > Back</span>
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#5'">Back </a>
                         <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
                           alt="">
                       </a>
@@ -904,7 +622,7 @@
                       <a class="text-dark align-items-center">
                         <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
                           alt="">
-                        <span class="text-muted d-none d-md-inline-block"[ngxScrollTo]="'#8'"> SUBMIT FORM </span>
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#7'">SUBMIT FORM </a>
                         <span class="pro-icons"><svg xmlns="" width="24" height="24"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
@@ -927,32 +645,10 @@
         <!--end container-->
       </div>
     
-        <div class="container mt-100 mt-60">
-          <div class="p-4 rounded bg-light shadow" data-aos="fade-up" data-aos-duration="1400">
-            <div class="row align-items-center">
-              <div class="col-sm-7">
-                <div class="text-sm-left">
-                  
-                </div>
-              </div>
-              <!--end col-->
-    
-              <div class="col-sm-5 mt-4 mt-sm-0">
-                <div class="text-sm-end">
-                  
-                  
-                </div>
-                
-              </div>
-              <!--end col-->
-            </div>
-            <!--end row -->
-          </div>
-        </div>
-        <!--end container-->
+        
     
      <!-- home Start -->
-     <section class="section pb-0" id="8">
+     <section class="section pb-0" id="7">
       <div style="background-color: #f5dcf9 ;width:1920px; height:1020px;">
         <div class="container">
           <div class="row justify-content-center">
@@ -995,24 +691,4 @@
         <!--end container-->
       </div>
     
-        <div class="container mt-100 mt-60">
-          <div class="p-4 rounded bg-light shadow" data-aos="fade-up" data-aos-duration="1400">
-            <div class="row align-items-center">
-              <div class="col-sm-7">
-                <div class="text-sm-left">
-                  
-                </div>
-              </div>
-              <!--end col-->
-    
-              <div class="col-sm-5 mt-4 mt-sm-0">
-                <div class="text-sm-end">
-                  
-                </div>
-              </div>
-              <!--end col-->
-            </div>
-            <!--end row -->
-          </div>
-        </div>
-        <!--end container-->
+     

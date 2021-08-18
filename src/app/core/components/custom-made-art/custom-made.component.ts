@@ -8,6 +8,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./custom-made.component.css']
 })
 export class CustomMadeComponent implements OnInit {
+  //Contenedores
+  public contentAddInfo: boolean;
 
   constructor(private modalService: NgbModal) { }
 

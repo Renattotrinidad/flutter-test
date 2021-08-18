@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -16,6 +17,7 @@ export class IndexStudioComponent implements OnInit {
   constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
+    
   }
 
   /***
@@ -24,5 +26,31 @@ export class IndexStudioComponent implements OnInit {
   open(content) {
     this.modalService.open(content, { centered: true });
   }
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: false,
+    pullDrag: false,
+    navSpeed: 700,
+    navText: ['', ''],
+    dots: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      900: {
+        items: 1
+      }
+    },
+    nav: false
+  };
+ 
+  Subscribeopen(content) {
+    this.modalService.open(content, { size: 'lg', windowClass: 'modal-holder', centered: true });
+  }
+
 
 }
