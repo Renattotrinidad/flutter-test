@@ -73,9 +73,7 @@
           </div>
           <!--end row-->
           <app-services [servicesData]="servicesData"></app-services>
-    
-        
-          
+  
           <div class="container mt-100 mt-60">
             <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
               <div class="section-title ms-lg-5">
@@ -137,27 +135,72 @@
                 <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">CUSTOM MADE -ART-</h4>
                 <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2.What type of art are you interested in? </p>
                    
-                <ul data-aos="fade-up" data-aos-duration="1800">
-                  
-                  
-                  <input   class="form-check-input" type="checkbox" ng-model="2a" for="flexCheckDefault"> Ink Illustration 
-                  
-                  <br>
-                  <input   class="form-check-input" type="checkbox" ng-model="2b" for="flexCheckDefault"> Hand Painted  
-                  <br>
-                  <input   class="form-check-input" type="checkbox" ng-model="2c" for="flexCheckDefault">Digital 
-                  <br>
-                  <input   class="form-check-input" type="checkbox" ng-model="2d" for="flexCheckDefault">Sculpture
-                  <br>
-                  <input   class="form-check-input" type="checkbox" ng-model="2e" for="flexCheckDefault">Photography
-                  <br>
+                        
+          <!-- Radio Buttons Start -->
+          <div class="col mt-4 pt-2" id="radio-buttons">
+            
+             
+
+              <div class="p-4">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <div class="form-check mb-0">
+                    <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1 " (click) = "touch(1);">
+                    <label class="form-check-label"  for="flexRadioDefault1"  >Ink Illustration</label>
+                  </div>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <div class="form-check mb-0">
+                    <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1" (click) = "touch(2);">
+                    <label class="form-check-label" for="flexRadioDefault1">Hand Painted </label>
+                  </div>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <div class="form-check mb-0">
+                    <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1" (click) = "touch(3);">
+                    <label class="form-check-label" for="flexRadioDefault1">Digital </label>
+                  </div>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <div class="form-check mb-0">
+                    <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1"(click) = "touch(4);">
+                    <label class="form-check-label" for="flexRadioDefault1">Sculpture</label>
+                  </div>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <div class="form-check mb-0">
+                    <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault2" (click) = "touch(5);">
+                    <label class="form-check-label" for="flexRadioDefault2">Photography</label>
+                  </div>
+                </div>
+                <br>
+                <span class="text-primary h5 me-2"></span>Other:
+                 <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                 <br>
+              </div>
+           
+          </div>
+          <!--end col-->
+          <!-- Radio Buttons End -->
+
+                <!--end row-->
+              </div>
+              <!--Contenedores -->
+               <div class="main-content" *ngIf="Contenedora2">
+                <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2a.What size are you thinking for this illustration? </p>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault"> Small (A4: 21 x 29.7 cm)</label>
+                 <br>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault"> Medium (A2: 42 x 59.4 cm)  </label>
+                 <br>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault">Large (A1: 59.4 x 84.1 cm)</label>
+                 <br>
                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                  <br>
-                  
-                </ul>
-                 
-                <div class="row align-items-center">
+                 <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                 <br>
+                 <div class="row align-items-center">
                   <div class="col-12">
                     <div class="d-flex align-items-center justify-content-between">
                       <a class="text-dark align-items-center">
@@ -168,7 +211,7 @@
                           </svg></span>
 
                           <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#1'">Back </a>
-                        <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
+                          <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
                           alt="">
                       </a>
 
@@ -187,79 +230,224 @@
                   </div>
                   <!--end col-->
                 </div>
-                <!--end row-->
-                
+               </div>
+               <div class="main-content" *ngIf="Contenedorb2">
+                 <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2b.What size are you thinking for this hand painted work?</p>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault">Small (30cm x 40cm)</label>
+                 <br>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault">Medium (60cm x 70cm)  </label>
+                 <br>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault">Large (100cm x 110cm) </label>
+                 <br>
+                 <span class="text-primary h5 me-2"></span>Other:
+                 <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                 <div class="row align-items-center">
+                  <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a class="text-dark align-items-center">
+                        <span class="pro-icons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                          </svg></span>
 
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#1'">Back </a>
+                          <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
+                          alt="">
+                      </a>
+
+                      <a class="text-dark align-items-center">
+                        <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
+                          alt="">
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#3'">Next </a>
+                        <span class="pro-icons"><svg xmlns="" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                          </svg></span>
+                      </a>
+                    </div>
+                  </div>
+                  <!--end col-->
+                </div>
+                 </div>
               </div>
-              <!--<p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2a.What size are you thinking for this illustration? </p>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Small (A4: 21 x 29.7 cm)</label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Medium (A2: 42 x 59.4 cm)  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Large (A1: 59.4 x 84.1 cm)</label>
-                  <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                  <br>
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2b.What size are you thinking for this hand painted work?</p>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Small (30cm x 40cm)</label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Medium (60cm x 70cm)  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Large (100cm x 110cm) </label>
-                  <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                  <br>
-                   <!--<p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2c. What dimensions work best for this digital piece?   </p>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Small (30cm x 40cm)</label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Medium (60cm x 70cm)  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Large (100cm x 110cm) </label>
-                  <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                  <br>
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2d. How big or small are you thinking? </p>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Small (e.g., the size of a head pillow)</label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Medium (e.g., the size of an oven) </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Large (e.g., the size of a fridge)</label>
-                  <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                  <br>
-                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2e. What size of photography are you thinking? </p>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Small (A4: 21 x 29.7 cm)</label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Medium (A2: 42 x 59.4 cm)  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Large (A1: 59.4 x 84.1 cm)</label>
-                  <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                <br> 
-              <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2f. This sounds like a very special artwork, tell us more about it! Don’t forget to mention size:</p>
-             <br>
-                  <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea> -->
+              <div class="main-content" *ngIf="Contenedorc2">
+                  <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2c. What dimensions work best for this digital piece?   </p>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault"> Small (30cm x 40cm)</label>
+                 <br>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault">Medium (60cm x 70cm)  </label>
+                 <br>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault">Large (100cm x 110cm) </label>
+                 <br>
+                 <span class="text-primary h5 me-2"></span>Other:
+                 <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                 <br>
+                 <div class="row align-items-center">
+                  <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a class="text-dark align-items-center">
+                        <span class="pro-icons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                          </svg></span>
+
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#1'">Back </a>
+                          <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
+                          alt="">
+                      </a>
+
+                      <a class="text-dark align-items-center">
+                        <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
+                          alt="">
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#3'">Next </a>
+                        <span class="pro-icons"><svg xmlns="" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                          </svg></span>
+                      </a>
+                    </div>
+                  </div>
+                  <!--end col-->
+                </div>
+              </div>
+              <div class="main-content" *ngIf="Contenedord2">
+                 <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2d. How big or small are you thinking? </p>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault"> Small (e.g., the size of a head pillow)</label>
+                 <br>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault">Medium (e.g., the size of an oven) </label>
+                 <br>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault">Large (e.g., the size of a fridge)</label>
+                 <br>
+                 <span class="text-primary h5 me-2"></span>Other:
+                 <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                 <br>
+                 <div class="row align-items-center">
+                  <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a class="text-dark align-items-center">
+                        <span class="pro-icons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                          </svg></span>
+
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#1'">Back </a>
+                          <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
+                          alt="">
+                      </a>
+
+                      <a class="text-dark align-items-center">
+                        <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
+                          alt="">
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#3'">Next </a>
+                        <span class="pro-icons"><svg xmlns="" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                          </svg></span>
+                      </a>
+                    </div>
+                  </div>
+                  <!--end col-->
+                </div>
+               </div>
+               <div class="main-content" *ngIf="Contenedore2">
+                 <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2e. What size of photography are you thinking? </p>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault">Small (A4: 21 x 29.7 cm)</label>
+                 <br>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault"> Medium (A2: 42 x 59.4 cm)  </label>
+                 <br>
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                 <label class="form-check-label" for="flexCheckDefault">Large (A1: 59.4 x 84.1 cm)</label>
+                 <br>
+                 <span class="text-primary h5 me-2"></span>Other:
+                 <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                 <br> 
+                 <div class="row align-items-center">
+                  <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a class="text-dark align-items-center">
+                        <span class="pro-icons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                          </svg></span>
+
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#1'">Back </a>
+                          <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
+                          alt="">
+                      </a>
+
+                      <a class="text-dark align-items-center">
+                        <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
+                          alt="">
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#3'">Next </a>
+                        <span class="pro-icons"><svg xmlns="" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                          </svg></span>
+                      </a>
+                    </div>
+                  </div>
+                  <!--end col-->
+                </div>
+               </div>
+               <div class="main-content" *ngIf="Contenedorf2">
+                <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">2f. This sounds like a very special artwork, tell us more about it! Don’t forget to mention size:</p>
+                <br>
+                 <span class="text-primary h5 me-2"></span>Other:
+                 <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea> 
+                 <div class="row align-items-center">
+                  <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a class="text-dark align-items-center">
+                        <span class="pro-icons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                          </svg></span>
+
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#1'">Back </a>
+                          <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
+                          alt="">
+                      </a>
+
+                      <a class="text-dark align-items-center">
+                        <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
+                          alt="">
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#3'">Next </a>
+                        <span class="pro-icons"><svg xmlns="" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                          </svg></span>
+                      </a>
+                    </div>
+                  </div>
+                  <!--end col-->
+                </div>
+               </div>
+           
                 
             </div>
             <!--end col-->
@@ -267,7 +455,7 @@
           <!--end row-->
        
         <!--end container-->
-      </div>
+     
   
            <!-- home Start -->
     <section class="section pb-0" id="3">
@@ -297,27 +485,52 @@
                 <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">CUSTOM MADE -ART-</h4>
                 <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">3.What theme fits your custom artwork more ?  </p>
                    
-                <ul data-aos="fade-up" data-aos-duration="1800">
+              
+          <!-- Radio Buttons Start -->
+          <div class="col mt-4 pt-2" id="radio-buttons">
+            
+             
+              <div class="p-4">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <div class="form-check mb-0">
+                    <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">Self-portrait</label>
+                  </div>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <div class="form-check mb-0">
+                    <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">Deities</label>
+                  </div>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <div class="form-check mb-0">
+                    <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">Spirituality</label>
+                  </div>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <div class="form-check mb-0">
+                    <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">Contemporary abstract</label>
+                  </div>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <div class="form-check mb-0">
+                    <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">¡Surprise me! 🌝</label>
+                  </div>
+                </div>
+                
+                    <span class="text-primary h5 me-2"></span>Other:
+                    <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea> 
 
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Self-portrait  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Deities   </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Spirituality   </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Contemporary abstract</label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">¡Surprise me!  🌝 </label>
-                  <br>
-                 <span class="text-primary h5 me-2"></span>Other:
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-                  
-                </ul>
+              </div>
+            
+          </div>
+          <!--end col-->
+          <!-- Radio Buttons End -->
+
                 <div class="row align-items-center">
                   <div class="col-12">
                     <div class="d-flex align-items-center justify-content-between">
@@ -385,57 +598,47 @@
               <div class="section-title ms-lg-5">
                 <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">CUSTOM MADE -ART-</h4>
                 <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4.In what space will this MATERSANT thrive in?  </p>
-                   
-                <ul data-aos="fade-up" data-aos-duration="1800">
-
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Outdoors  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Indoors  </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Both Outdoors & Indoors   </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">Virtual space</label>
-                  <br>
-                  <br>
-        
-                </ul>
-                <div class="row align-items-center">
-                  <div class="col-12">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <a class="text-dark align-items-center">
-                        <span class="pro-icons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm">
-                            <line x1="19" y1="12" x2="5" y2="12"></line>
-                            <polyline points="12 19 5 12 12 5"></polyline>
-                          </svg></span>
-                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#3'">Back </a>
-                        <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
-                          alt="">
-                      </a>
-
-                      <a class="text-dark align-items-center">
-                        <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
-                          alt="">
-                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#5'">Next </a>
-                        <span class="pro-icons"><svg xmlns="" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                          </svg></span>
-                      </a>
-                    </div>
-                  </div>
-                  <!--end col-->
+                     
+          <!-- Radio Buttons Start -->
+          <div class="col mt-4 pt-2" id="radio-buttons">
+            
+             
+            <div class="p-4">
+              <div class="custom-control custom-radio custom-control-inline">
+                <div class="form-check mb-0">
+                  <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1" (click) = "touch(6);">
+                  <label class="form-check-label" for="flexRadioDefault1" >Outdoors</label>
                 </div>
-                <!--end row-->
-
               </div>
-             <!-- <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4a. Outdoors can mean many things, so for us it’s important to know about the elements that will interact with the custom artwork.
+              <div class="custom-control custom-radio custom-control-inline">
+                <div class="form-check mb-0">
+                  <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1" (click) = "touch(7);">
+                  <label class="form-check-label" for="flexRadioDefault1">Indoors</label>
+                </div>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <div class="form-check mb-0">
+                  <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1" (click) = "touch(8);">
+                  <label class="form-check-label" for="flexRadioDefault1">Both Outdoors & Indoors</label>
+                </div>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <div class="form-check mb-0">
+                  <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1" (click) = "touch(9);">
+                  <label class="form-check-label" for="flexRadioDefault1">Virtual space</label>
+                </div>
+              </div>
+              
+            
+            </div>
+          
+        </div>
+        <!--end col-->
+        <!-- Radio Buttons End -->
+                
+              </div>
+              <div class="main-content" *ngIf="Contenedora4">
+             <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4a. Outdoors can mean many things, so for us it’s important to know about the elements that will interact with the custom artwork.
                 Check all that apply:  </p>
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault"> Exposure to direct sunlight</label>
@@ -454,7 +657,39 @@
               <br>
               <p class="text" data-aos="fade-up" data-aos-duration="1400">You can also upload a photo of the space or spot you have in mind (optional):   <button mat-stroked-button="primary" >JPG, PNG, PDF</button>
               <br>
-              <!--<p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4b. Sweet, Indoors is a great shout.  What space did you have in mind?   </p>
+                <div class="row align-items-center">
+                  <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <a class="text-dark align-items-center">
+                        <span class="pro-icons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                          </svg></span>
+
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#1'">Back </a>
+                          <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
+                          alt="">
+                      </a>
+
+                      <a class="text-dark align-items-center">
+                        <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
+                          alt="">
+                          <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#3'">Next </a>
+                        <span class="pro-icons"><svg xmlns="" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                          </svg></span>
+                      </a>
+                    </div>
+                  </div>
+                  <!--end col-->
+                </div>
+              </div>
+              <div class="main-content" *ngIf="Contenedorb4">
+              <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4b. Sweet, Indoors is a great shout.  What space did you have in mind?   </p>
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">Living room </label>
               <br>
@@ -470,16 +705,111 @@
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">Foyer  </label>
               <br>
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">4c. Ooh lala, a versatile custom piece, how splendid.
+              <div class="row align-items-center">
+                <div class="col-12">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <a class="text-dark align-items-center">
+                      <span class="pro-icons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm">
+                          <line x1="19" y1="12" x2="5" y2="12"></line>
+                          <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg></span>
+
+                        <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#1'">Back </a>
+                        <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
+                        alt="">
+                    </a>
+
+                    <a class="text-dark align-items-center">
+                      <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
+                        alt="">
+                        <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#3'">Next </a>
+                      <span class="pro-icons"><svg xmlns="" width="24" height="24"
+                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                          <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg></span>
+                    </a>
+                  </div>
+                </div>
+                <!--end col-->
+              </div>
+              </div>
+              <div class="main-content" *ngIf="Contenedorc4">
+              <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4c. Ooh lala, a versatile custom piece, how splendid.</p>
               <br>
               <span class="text-primary h5 me-2"></span>Other:
-              <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+              <textarea rows="2" cols="80" class="form-control" placeholder=""></textarea>  
               <br>
+              <div class="row align-items-center">
+                <div class="col-12">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <a class="text-dark align-items-center">
+                      <span class="pro-icons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm">
+                          <line x1="19" y1="12" x2="5" y2="12"></line>
+                          <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg></span>
+
+                        <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#1'">Back </a>
+                        <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
+                        alt="">
+                    </a>
+
+                    <a class="text-dark align-items-center">
+                      <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
+                        alt="">
+                        <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#3'">Next </a>
+                      <span class="pro-icons"><svg xmlns="" width="24" height="24"
+                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                          <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg></span>
+                    </a>
+                  </div>
+                </div>
+                <!--end col-->
+              </div>
+              </div>
+              <div class="main-content" *ngIf="Contenedord4">
               <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">4d. Virtual, digital, dimensional, tell us more.  </p>
               <br>
               <span class="text-primary h5 me-2"></span>Other:
-              <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
-              <br> -->
+              <textarea rows="2" cols="80" class="form-control" placeholder=""></textarea>  
+              <br>
+              <div class="row align-items-center">
+                <div class="col-12">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <a class="text-dark align-items-center">
+                      <span class="pro-icons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm">
+                          <line x1="19" y1="12" x2="5" y2="12"></line>
+                          <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg></span>
+
+                        <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#1'">Back </a>
+                        <img src="" class="avatar avatar-small rounded shadow ms-2" style="height:auto;"
+                        alt="">
+                    </a>
+
+                    <a class="text-dark align-items-center">
+                      <img src="" class="avatar avatar-small rounded shadow me-2" style="height:auto;"
+                        alt="">
+                        <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded"[ngxScrollTo]="'#3'">Next </a>
+                      <span class="pro-icons"><svg xmlns="" width="24" height="24"
+                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                          <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg></span>
+                    </a>
+                  </div>
+                </div>
+                <!--end col-->
+              </div>
+              </div>
             </div>
             <!--end col-->
           </div>
@@ -488,8 +818,6 @@
         <!--end container-->
       </div>
 
-       
-    
            <!-- home Start -->
     <section class="section pb-0" id="5">
       <div style="background-color: #ffe1AE  ;width:1920px; height:1020px;">
@@ -517,16 +845,28 @@
                 <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000">CUSTOM MADE -ART-</h4>
                 <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">5. Would you like your custom artwork framed? </p>
                    
-                <ul data-aos="fade-up" data-aos-duration="1800">
+                         <!-- Radio Buttons Start -->
+              
 
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> Yes </label>
-                  <br>
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> No  </label>
-                  <br>
+              <div class="p-4">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <div class="form-check mb-0">
+                    <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">Yes</label>
+                  </div>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <div class="form-check mb-0">
+                    <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">No</label>
+                  </div>
+                </div>
+               
+              </div>
             
-                </ul>
+          <!--end col-->
+          <!-- Radio Buttons End -->
+
                 <div class="row align-items-center">
                   <div class="col-12">
                     <div class="d-flex align-items-center justify-content-between">
@@ -567,9 +907,6 @@
         <!--end container-->
       </div>
   
-
-
-      
     
            <!-- home Start -->
     <section class="section pb-0" id="6">
@@ -599,12 +936,8 @@
                 <p class="text-muted" data-aos="fade-up" data-aos-duration="1400">6.Anything else you may want to add? </p>
                    
                 <ul data-aos="fade-up" data-aos-duration="1800">
-                
                 <span class="text-primary h5 me-2"></span>Other:
                 <textarea rows="2" cols="80" class="form-control" placeholder=""></textarea>
-            
-
-            
                 </ul>
                 <div class="row align-items-center">
                   <div class="col-12">
@@ -645,9 +978,8 @@
        
         <!--end container-->
       </div>
+    </section> 
   
-    
-    
      <!-- home Start -->
      <section class="section pb-0" id="7">
       <div style="background-color: #f5dcf9 ;width:1920px; height:1020px;">

@@ -16,8 +16,8 @@ export class IndexStudioComponent implements OnInit {
 
   constructor(private modalService: NgbModal) { }
 
-  ngOnInit(): void {
-    
+  ngOnInit(){
+    this.modalService.open("Subscribecontent", { size: 'lg', windowClass: 'modal-holder', centered: true });
   }
 
   /***
@@ -49,7 +49,7 @@ export class IndexStudioComponent implements OnInit {
   };
  
   Subscribeopen(content) {
-    this.modalService.open(content, { size: 'lg', windowClass: 'modal-holder', centered: true });
+   
   }
 
 
