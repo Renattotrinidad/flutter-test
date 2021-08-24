@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit} from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
+
 @Component({
   selector: 'app-index-studio',
   templateUrl: './index-studio.component.html',
@@ -21,7 +22,15 @@ export class IndexStudioComponent implements OnInit {
 
   }
 ngAfterViewInit(): void {
-  this.Subscribeopen("modalService");
+// this.Subscribeopen("modalServicesss");
+
+//<script>
+//$(document).ready(function(){
+  //  $(' #Subscribecontent').modal('show')});
+//</script>
+
+
+
   //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
   //Add 'implements AfterViewInit' to the class.
   
