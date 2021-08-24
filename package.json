@@ -30,6 +30,7 @@
         "angularx-flatpickr": "^6.5.1",
         "bootstrap": "^5.0.1",
         "flatpickr": "^4.6.6",
+        "jquery": "^3.6.0",
         "masonry-layout": "^4.2.2",
         "ngx-lightbox": "^2.3.0",
         "ngx-masonry": "^10.0.6",

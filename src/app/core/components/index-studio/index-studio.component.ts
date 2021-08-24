@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit} from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
@@ -17,9 +17,15 @@ export class IndexStudioComponent implements OnInit {
   constructor(private modalService: NgbModal) { }
 
   ngOnInit(){
-    this.modalService.open("Subscribecontent", { size: 'lg', windowClass: 'modal-holder', centered: true });
-  }
+    
 
+  }
+ngAfterViewInit(): void {
+  this.Subscribeopen("modalService");
+  //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
+  //Add 'implements AfterViewInit' to the class.
+  
+}
   /***
    * Login Model open
    */
@@ -49,6 +55,9 @@ export class IndexStudioComponent implements OnInit {
   };
  
   Subscribeopen(content) {
+
+    this.modalService.open(content, {  centered: true });
+    
    
   }
 
