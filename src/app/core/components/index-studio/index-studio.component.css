@@ -12,8 +12,8 @@
     top: 0;
     left: 0;
     display: flex;
-    animation: modal 6s 0s;
-    
+    animation: modal 12s;
+    animation-delay: initial;
     visibility: hidden;
     opacity: 0;
 }
