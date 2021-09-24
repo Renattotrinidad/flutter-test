@@ -13,7 +13,10 @@ import { combineLatest } from 'rxjs/internal/operators';
 import { ArtComponent } from './core/components/art/art.component';
 import { AboutusTwoComponent } from './core/components/aboutus-two/aboutus-two.component';
 import { CustomMadeComponent } from './core/components/custom-made-art/custom-made.component';
-
+import { ArtTypeComponent } from './core/components/art-type/art-type.component';
+import { SpaceComponent } from './core/components/space/space.component';
+import { CustomArtworkComponent } from './core/components/custom-artwork/custom-artwork.component';
+import { SubmitComponent } from './core/components/submit/submit.component';
 const routes: Routes = [
   {
     path: '',
@@ -33,7 +36,10 @@ const routes: Routes = [
       { path: 'aboutus', component: AboutusTwoComponent },
       { path: 'art', component: ArtComponent },
       { path: 'custome-made', component: CustomMadeComponent  },
-      
+      { path: 'art-type', component: ArtTypeComponent },
+      { path: 'space', component: SpaceComponent },
+      { path: 'custome-artwork', component: CustomArtworkComponent },
+      { path: 'submit', component: SubmitComponent },
     ]
   },
 

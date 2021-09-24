@@ -42,6 +42,11 @@ import { ShopCartComponent } from './core/components/shop-cart/shop-cart.compone
 import { AboutusTwoComponent } from './core/components/aboutus-two/aboutus-two.component';
 import { ArtComponent } from './core/components/art/art.component';
 import { CustomMadeComponent } from './core/components/custom-made-art/custom-made.component';
+import { ArtTypeComponent } from './core/components/art-type/art-type.component';
+import { SpaceComponent } from './core/components/space/space.component';
+import { CustomArtworkComponent } from './core/components/custom-artwork/custom-artwork.component';
+import { SubmitComponent } from './core/components/submit/submit.component';
+
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -65,6 +70,12 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     AboutusTwoComponent,
     ArtComponent,
     CustomMadeComponent,
+    ArtTypeComponent,
+    SpaceComponent,
+    CustomArtworkComponent,
+    SubmitComponent,
+   
+    
   ],
   imports: [
     BrowserModule,

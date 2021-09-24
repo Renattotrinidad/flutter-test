@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { Router } from '@angular/router';
-
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-custom-made',
@@ -10,7 +9,14 @@ import { Router } from '@angular/router';
 })
 export class CustomMadeComponent implements OnInit {
   //Contenedores}
+  public ContenedorPrincipal: boolean;
   public ContentPrincipal: boolean ;
+  public ContentPrincipal1: boolean ;
+  public ContentPrincipal2: boolean ;
+  public ContentPrincipal3: boolean ;
+  public ContentPrincipal4: boolean ;
+  public ContentPrincipal5: boolean ;
+  public ContentPrincipal6: boolean ;
   public Contenedora2: boolean;
   public Contenedorb2: boolean;
   public Contenedorc2: boolean;
@@ -24,6 +30,7 @@ export class CustomMadeComponent implements OnInit {
 
 
   constructor(private modalService: NgbModal) { }
+  private router: Router
 
   isCondensed = false;
   currentSection = 'home';
@@ -169,7 +176,14 @@ export class CustomMadeComponent implements OnInit {
 
   ngOnInit(): void {
     this.ContentPrincipal =  true;
-  
+    this.ContentPrincipal1 =  false;
+    this.ContentPrincipal2 =  false;
+    this.ContentPrincipal3 =  false;
+    this.ContentPrincipal4 =  false;
+    this.ContentPrincipal5 =  false;
+    this.ContentPrincipal6 =  false;
+   // this.Contenedorb2 = false;
+   
   }
 
    
@@ -247,7 +261,7 @@ if (type == 5){
 
 }
 
-    if (type == 6){
+    if (type == 10){
      
       this.Contenedora2= false;
       this.Contenedorb2 = false;
@@ -321,10 +335,7 @@ if (type == 9){
    this.Contenedord4 = true;
 
 }
-
-  
-    
-      }
+   }
   
 
   mapView(mapcontent) {
@@ -383,8 +394,15 @@ if (type == 9){
   onSectionChange(sectionId: string) {
     this.currentSection = sectionId;
   }
-  
 
+  getArt() {        //Direccionarse a contenedor
+    this.router.navigate(
+      ['/art']
+    );
+  }
+  
 }
+
+
 
 

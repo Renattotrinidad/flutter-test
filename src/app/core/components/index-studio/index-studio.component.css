@@ -4,31 +4,32 @@
     margin: 0;
 }
 .modal{
-    width: 100%;
-    height: 100vh;
+
+    width: 650%; 
+    height: 20vh;
     background: absolute;
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
-   
-    animation: modal 8s 1s;
+    animation: modal 6s 0s;
     
     visibility: hidden;
     opacity: 0;
 }
 .contenido{
     margin:auto;
-    width: 35%;
-    height: 40%;
-background: white;
-border-radius: 10px;
-border: black 5px double;
+    width: 400%;
+    height: 28%;
+
+font-style: oblique;
+color:white;
+text-align: center;
 }
-#cerrar{
+.cerrar{
     display: none;
 }
-#cerrar + label{
+.cerrar + label{
 position: absolute;
 color: #fff;
 font-size: 25px;
@@ -49,12 +50,8 @@ opacity: 0;
 }
 
 @keyframes modal {
-    0% {background: white}
-    25% {background: rgb(219, 152, 163); left: 0; top: 0px;}
-    50% {background: rgb(113, 170, 216); }
-    75% {background: rgb(242, 57, 248); }
-    
-
+ 0% { left: 200%;}
+ 
     100% {
         visibility: visible;
 opacity: 1;
