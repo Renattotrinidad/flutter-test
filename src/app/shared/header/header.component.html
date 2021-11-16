@@ -9,11 +9,11 @@
                 <!-- <img src="assets/images/logo-dark.png" class="l-dark logo-light-mode" height="24" alt="">
                 <img src="assets/images/logo-light.png" class="logo-dark-mode" height="24" alt=""> -->
             </a>
-            <a class="logo" href="https://materia.ima.com.gt/" *ngIf="navClass !== 'nav-light'">
+           <!-- <a class="logo" href="https://materia.ima.com.gt/" *ngIf="navClass !== 'nav-light'">
                 <span class="l-dark logo-light-mode" height="24" style="color: #7a7878 !important; font-size: 28px; font-family: 'PPEiko-Medium' !important;">MATERIA CURADA</span>
                 <!-- <img src="assets/images/logo-dark.png" class="l-dark logo-light-mode" height="24" alt="">
-              <img src="assets/images/logo-light.png" class="logo-dark-mode" height="24" alt=""> -->
-            </a>
+              <img src="assets/images/logo-light.png" class="logo-dark-mode" height="24" alt=""> --
+            </a>-->
         </div>
 
         <!-- <span *ngIf="!buttonList && !isdeveloper && !shopPages">
@@ -48,7 +48,7 @@
             <ul class="navigation-menu" [class]="navClass" style="font-family: 'PPEiko-Thin' !important;">
                 <!-- <li><a routerLink="/" class="nav-link-ref">HOME</a></li> -->
                 <li class="has-submenu">
-                    <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">CUSTOM-MADE</a><span class="menu-arrow"></span>
+                   <!--  <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">CUSTOM-MADE</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <li class="nav-link-ref">
                             <a href="javascript:void(0)" style="color: #6A1B9A !important;"  routerLink="/custome-made">ART</a>
@@ -59,11 +59,11 @@
                         <li class="nav-link-ref">
                             <a href="javascript:void(0)"  style="color: #00838F !important;" routerLink="/">SPACE DESIGNE</a>
                         </li>
-                    </ul>
+                    </ul>-->
                 </li>
            
                 <li class="has-submenu">
-                    <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">SHOP</a><span class="menu-arrow"></span>
+                    <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">PRODUCTS</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <div class="main-content color1" >
                         <li class="nav-link-ref">
@@ -89,7 +89,7 @@
                 </li>
 
                 
-                <li class="has-submenu">
+             <!--    <li class="has-submenu">
                     <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">ARCHIVE</a><span class="menu-arrow"></span>
                     <ul class="submenu">
                         <li class="nav-link-ref">
@@ -111,7 +111,10 @@
                 </li>-->
                 
             <li><a routerLink="/aboutus" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">ABOUT</a> </li> <span class="menu-arrow"></span>
+            <li><a routerLink="/aboutus" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">CONTACT US</a> </li> <span class="menu-arrow"></span>
            </ul>
+           
+           
             
             <!--end navigation menu-->
             <!-- <div class="buy-menu-btn d-none">
