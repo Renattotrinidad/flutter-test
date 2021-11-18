@@ -46,6 +46,18 @@ import { ArtTypeComponent } from './core/components/art-type/art-type.component'
 import { SpaceComponent } from './core/components/space/space.component';
 import { CustomArtworkComponent } from './core/components/custom-artwork/custom-artwork.component';
 import { SubmitComponent } from './core/components/submit/submit.component';
+import { PageContactDetailComponent } from './page-contact-detail/page-contact-detail.component';
+import { IndexShopComponent } from './index-shop/index-shop.component';
+import { IndexShopWallComponent } from './index-shop-wall/index-shop-wall.component';
+import { ShopMatersantDecorComponent } from './shop-matersant-decor/shop-matersant-decor.component';
+import { ShopMatersantFinishingComponent } from './shop-matersant-finishing/shop-matersant-finishing.component';
+import { ShopAccesoriesComponent } from './shop-accesories/shop-accesories.component';
+import { ShopClothingComponent } from './shop-clothing/shop-clothing.component';
+import { IndexUpcycledComponent } from './index-upcycled/index-upcycled.component';
+import { IndexMateriaDecorComponent } from './index-materia-decor/index-materia-decor.component';
+import { ShopAccesoriesMateriaComponent } from './shop-accesories-materia/shop-accesories-materia.component';
+import { ShopArtMateriaComponent } from './shop-art-materia/shop-art-materia.component';
+import { IndexShopFurnitureComponent } from './index-shop-furniture/index-shop-furniture.component';
 
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
@@ -74,6 +86,18 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     SpaceComponent,
     CustomArtworkComponent,
     SubmitComponent,
+    PageContactDetailComponent,
+    IndexShopComponent,
+    IndexShopWallComponent,
+    ShopMatersantDecorComponent,
+    ShopMatersantFinishingComponent,
+    ShopAccesoriesComponent,
+    ShopClothingComponent,
+    IndexUpcycledComponent,
+    IndexMateriaDecorComponent,
+    ShopAccesoriesMateriaComponent,
+    ShopArtMateriaComponent,
+    IndexShopFurnitureComponent,
    
     
   ],

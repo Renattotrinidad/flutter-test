@@ -17,6 +17,19 @@ import { ArtTypeComponent } from './core/components/art-type/art-type.component'
 import { SpaceComponent } from './core/components/space/space.component';
 import { CustomArtworkComponent } from './core/components/custom-artwork/custom-artwork.component';
 import { SubmitComponent } from './core/components/submit/submit.component';
+import { PageContactDetailComponent } from './page-contact-detail/page-contact-detail.component';
+import { IndexShopComponent } from './index-shop/index-shop.component';
+import { IndexMateriaDecorComponent } from './index-materia-decor/index-materia-decor.component';
+import { IndexShopFurnitureComponent } from './index-shop-furniture/index-shop-furniture.component';
+import { IndexShopWallComponent } from './index-shop-wall/index-shop-wall.component';
+import { IndexUpcycledComponent } from './index-upcycled/index-upcycled.component';
+import { ShopAccesoriesComponent } from './shop-accesories/shop-accesories.component';
+import { ShopAccesoriesMateriaComponent } from './shop-accesories-materia/shop-accesories-materia.component';
+import { ShopArtMateriaComponent } from './shop-art-materia/shop-art-materia.component';
+import { ShopClothingComponent } from './shop-clothing/shop-clothing.component';
+import { ShopMatersantDecorComponent } from './shop-matersant-decor/shop-matersant-decor.component';
+import { ShopMatersantFinishingComponent } from './shop-matersant-finishing/shop-matersant-finishing.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -40,6 +53,18 @@ const routes: Routes = [
       { path: 'space', component: SpaceComponent },
       { path: 'custome-artwork', component: CustomArtworkComponent },
       { path: 'submit', component: SubmitComponent },
+      {path:  'contactus', component:PageContactDetailComponent},
+      {path: 'index-shop', component:IndexShopComponent},
+      { path: 'materia-decor', component:IndexMateriaDecorComponent } ,
+      {path: 'shop-furniture', component: IndexShopFurnitureComponent }, 
+      { path: 'shop-wall', component:IndexShopWallComponent } ,
+      {path: 'index-upcycle', component: IndexUpcycledComponent } ,
+      {path: 'shop-accesories', component: ShopAccesoriesComponent } ,
+      {path: 'accesories-materia', component: ShopAccesoriesMateriaComponent },
+      { path: 'art-materia', component:ShopArtMateriaComponent } ,
+      { path: 'shop-clothing', component:ShopClothingComponent } ,
+      { path: 'matersant-decor', component:ShopMatersantDecorComponent } ,
+      { path: 'matersant-finishing', component:ShopMatersantFinishingComponent } ,
     ]
   },
 
