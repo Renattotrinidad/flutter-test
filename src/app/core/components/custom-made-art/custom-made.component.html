@@ -49,7 +49,24 @@
                   <li class="mb-0"><span class="text-primary h5 me-2"></span>Last Name:</li>
                   <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
                   <li class="mb-0"><span class="text-primary h5 me-2"></span>Country: </li>
-                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea> 
+                  
+                  <li class="mb-0"><span class="text-primary h5 me-2"></span>Do you need a: </li>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <div class="form-check mb-0">
+                      <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1 " (click) = "touch(1);">
+                      <label class="form-check-label"  for="flexRadioDefault1"  >Product</label>
+                    </div>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <div class="form-check mb-0">
+                      <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1 " (click) = "touch(1);">
+                      <label class="form-check-label"  for="flexRadioDefault1"  > Servicio</label>
+                    </div>
+                  </div>
+                  <br>
+                  <li class="mb-0"><span class="text-primary h5 me-2"></span>Tell us a little more... (literally anything :): </li>
+                  <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea> 
                   <li class="mb-0"><span class="text-primary h5 me-2"></span>Email: </li>
                   <textarea rows="1" cols="80" class="form-control" placeholder=""></textarea>  
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -59,7 +76,7 @@
                 </ul>
                 <div class="mt-4" data-aos="fade-up" data-aos-duration="2200">
                   <div class="main-content pruebasBoton"  >
-                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded" routerLink="/art" [ngxScrollTo]="'#2'" style="color: white !important;" >Next <i
+                  <a href="javascript:void(0)" class="text-primary p-1 px-2 shadow rounded" routerLink="" [ngxScrollTo]="''" style="color: white !important;" >Next <i
                       class="uil uil-angle-right-b"></i></a>
                     </div>
                 </div>
@@ -74,7 +91,7 @@
      </div>
     </div>
 
-    <!-- home Start -->
+    <!-- home Start 
     <div class="zindex" *ngIf="ContentPrincipal1" >
     
     <div class="section pb-0" id="2">
@@ -85,9 +102,9 @@
               <div class="section-title mb-4 pb-2">
               </div>
             </div>
-            <!--end col-->
+            <!--end col--
           </div>
-          <!--end row-->
+          <!--end row--
           <app-services [servicesData]="servicesData"></app-services>
       
         <div class="container mt-100 mt-60">
@@ -95,14 +112,14 @@
             <div class="col-lg-5 col-md-6">
         
             </div>
-            <!--end col-->
+            <!--end col--
             <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0" style="color: white !important;" >
               <div class="section-title ms-lg-5">
                 <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000" style="color: white !important;" >CUSTOM-MADE ART</h4>
                 <p class="text " data-aos="fade-up" data-aos-duration="1400" style="color: white !important;" >2.What type of art are you interested in?  * </p>
                    
 
-          <!-- Radio Buttons Start -->
+          <!-- Radio Buttons Start --
           <div class="col mt-4 pt-2" id="radio-buttons">
               <div class="p-4">
                 <div class="custom-control custom-radio custom-control-inline">
@@ -144,11 +161,11 @@
            
           </div>
           <!--end col-->
-          <!-- Radio Buttons End -->
+          <!-- Radio Buttons End --
 
-                <!--end row-->
+                <!--end row--
               </div>
-              <!--Contenedores -->
+              <!--Contenedores --
               
                <div class="main-content clase"  *ngIf="Contenedora2">
                 <p class="text" data-aos="fade-up" data-aos-duration="1400">2a.What size are you thinking for this illustration? </p>
@@ -203,7 +220,7 @@
                       </a>
                     </div>
                   </div>
-                  <!--end col-->
+                  <!--end col--
                 </div>
                </div>
              
@@ -259,7 +276,7 @@
                       </a>
                     </div>
                   </div>
-                  <!--end col-->
+                  <!--end col--
                 </div>
                  </div>
               </div>
@@ -319,7 +336,7 @@
                     </div>
                   </div>
                   </div>
-                  <!--end col-->
+                  <!--end col--
                 </div>
               </div>
               <div class="main-content prueba" *ngIf="Contenedord2">
@@ -378,7 +395,7 @@
                       </a>
                     </div>
                   </div>
-                  <!--end col-->
+                  <!--end col--
                 </div>
                </div>
                </div>
@@ -437,7 +454,7 @@
                       </a>
                     </div>
                   </div>
-                  <!--end col-->
+                  <!--end col--
                 </div>
                </div>
                </div>
@@ -474,20 +491,20 @@
                       </a>
                     </div>
                   </div>
-                  <!--end col-->
+                  <!--end col--
                 </div>
                </div>
            
                 
             </div>
-            <!--end col-->
+            <!--end col--
       </div>
-          <!--end row-->
-        <!--end container-->
+          <!--end row--
+        <!--end container--
     </div>
     </div>
   
-    <!-- home Start -->
+    <!-- home Start --
     <div class="zindex" *ngIf="ContentPrincipal2" >
      <div class="section pb-0" id="3">
       <div style="background-color: #e89f36 ;width:1920px; height:1020px;">
@@ -497,19 +514,19 @@
               <div class="section-title mb-4 pb-2">
               </div>
             </div>
-            <!--end col-->
+            <!--end col--
           </div>
-          <!--end row-->
+          <!--end row--
           <app-services [servicesData]="servicesData"></app-services>
         </div>
-        <!--end container-->
+        <!--end container--
     
         <div class="container mt-100 mt-60">
          
             <div class="col-lg-5 col-md-6">
         
             </div>
-            <!--end col-->
+            <!--end col--
     
             <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0" style="color: white !important;">
               <div class="section-title ms-lg-5">
@@ -517,7 +534,7 @@
                 <p class="text" data-aos="fade-up" data-aos-duration="1400">3.What theme fits your custom artwork more ?  </p>
                    
               
-          <!-- Radio Buttons Start -->
+          <!-- Radio Buttons Start --
           <div class="col mt-4 pt-2" id="radio-buttons">
             
              
@@ -559,8 +576,8 @@
               </div>
             
           </div>
-          <!--end col-->
-          <!-- Radio Buttons End -->
+          <!--end col--
+          <!-- Radio Buttons End --
 
                 <div class="row align-items-center">
                   <div class="col-12">
@@ -589,22 +606,22 @@
                       </a>
                     </div>
                   </div>
-                  <!--end col-->
+                  <!--end col--
                 </div>
-                <!--end row-->
+                <!--end row--
 
               </div>
             </div>
-            <!--end col-->
+            <!--end col--
           </div>
-          <!--end row-->
+          <!--end row--
        
-        <!--end container-->
+        <!--end container--
       </div>
      </div>
     </div>
 
-    <!-- home Start -->
+    <!-- home Start --
     <div class="zindex" *ngIf="ContentPrincipal3" >
       <div class="section pb-0" id="4">
       <div style="background-color: #051b06   ;width:1920px; height:1020px;">
@@ -614,26 +631,26 @@
               <div class="section-title mb-4 pb-2">
               </div>
             </div>
-            <!--end col-->
+            <!--end col--
           </div>
-          <!--end row-->
+          <!--end row--
           <app-services [servicesData]="servicesData"></app-services>
         </div>
-        <!--end container-->
+        <!--end container--
     
         <div class="container mt-100 mt-60">
          
             <div class="col-lg-5 col-md-6">
         
             </div>
-            <!--end col-->
+            <!--end col--
     
             <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0" style="color: white !important;">
               <div class="section-title ms-lg-5">
                 <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000" style="color: white !important;">CUSTOM-MADE ART</h4>
                 <p class="text" data-aos="fade-up" data-aos-duration="1400">4.In what space will this MATERSANT thrive in?  </p>
                      
-          <!-- Radio Buttons Start -->
+          <!-- Radio Buttons Start --
           <div class="col mt-4 pt-2" id="radio-buttons">
             <div class="p-4">
               <div class="custom-control custom-radio custom-control-inline">
@@ -666,7 +683,7 @@
           
         </div>
         <!--end col-->
-        <!-- Radio Buttons End -->
+        <!-- Radio Buttons End --
                 
               </div>
               <div class="main-content clase " *ngIf="Contenedora4">
@@ -731,7 +748,7 @@
                       </a>
                     </div>
                   </div>
-                  <!--end col-->
+                  <!--end col--
                 </div>
               </div>
               <div class="main-content clase " *ngIf="Contenedorb4">
@@ -796,7 +813,7 @@
                     </a>
                   </div>
                 </div>
-                <!--end col-->
+                <!--end col--
               </div>
               </div>
               <div class="main-content clase" *ngIf="Contenedorc4">
@@ -834,7 +851,7 @@
                     </a>
                   </div>
                 </div>
-                <!--end col-->
+                <!--end col--
               </div>
               </div>
               <div class="main-content margen " *ngIf="Contenedord4">
@@ -872,20 +889,20 @@
                     </a>
                   </div>
                 </div>
-                <!--end col-->
+                <!--end col--
               </div>
               </div>
             </div>
-            <!--end col-->
+            <!--end col--
           </div>
-          <!--end row-->
+          <!--end row--
        
-        <!--end container-->
+        <!--end container--
       </div>
       </div>
     </div>
 
-    <!-- home Start -->
+    <!-- home Start --
     <div class="zindex" *ngIf="ContentPrincipal4" >
     <div class="section pb-0" id="5">
       <div style="background-color: #4aac91  ;width:1920px; height:1020px;">
@@ -895,25 +912,25 @@
               <div class="section-title mb-4 pb-2">
               </div>
             </div>
-            <!--end col-->
+            <!--end col--
           </div>
-          <!--end row-->
+          <!--end row--
           <app-services [servicesData]="servicesData"></app-services>
         </div>
-        <!--end container-->
+        <!--end container--
     
         <div class="container mt-100 mt-60">
          
             <div class="col-lg-5 col-md-6">
         
             </div>
-            <!--end col-->
+            <!--end col--
             <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0" style="color: white !important;"> 
               <div class="section-title ms-lg-5">
                 <h4 class="title mb-4" data-aos="fade-up" data-aos-duration="1000" style="color: white !important;">CUSTOM-MADE ART</h4>
                 <p class="text" data-aos="fade-up" data-aos-duration="1400">5. Would you like your custom artwork framed? </p>
                    
-                         <!-- Radio Buttons Start -->
+                         <!-- Radio Buttons Start --
               
 
               <div class="p-4">
@@ -932,8 +949,8 @@
                
               </div>
             
-          <!--end col-->
-          <!-- Radio Buttons End -->
+          <!--end col--
+          <!-- Radio Buttons End --
 
                 <div class="row align-items-center">
                   <div class="col-12">
@@ -962,17 +979,17 @@
                       </a>
                     </div>
                   </div>
-                  <!--end col-->
+                  <!--end col--
                 </div>
-                <!--end row-->
+                <!--end row--
 
               </div>
             </div>
-            <!--end col-->
+            <!--end col--
           </div>
-          <!--end row-->
-       
-        <!--end container-->
+          <!--end row--
+  
+        <!--end container--
       </div>
   
     </div>

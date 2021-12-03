@@ -33,3 +33,29 @@
     background-color: #4aac91;
     font-style: oblique;
 }
+
+.contenedor1{
+   margin-left: 3%;
+    width:400px;
+}
+.contenedor2{
+
+    width:400px;;
+    margin-left: 3%;
+    height: 256px;
+}
+.contenedor3{
+    width:400px;
+    margin-left: 3%;
+    height: 256px;
+}
+.contenedor4{
+    width:400px;
+    height: 256px;
+    margin-left: 3%;
+}
+.contenedor5{
+    width:400px;
+    height: 256px;
+    margin-left: 3%;
+}
