@@ -35,27 +35,27 @@
 }
 
 .contenedor1{
-   margin-left: 3%;
-    width:400px;
+   margin-left: 1%;
+   width:600px;
 }
 .contenedor2{
 
-    width:400px;;
-    margin-left: 3%;
+    width:600px;
+    margin-left: 1%;
     height: 256px;
 }
 .contenedor3{
-    width:400px;
-    margin-left: 3%;
+    width:600px;
+    margin-left: 1%;
     height: 256px;
 }
 .contenedor4{
-    width:400px;
+    width:600px;
     height: 256px;
-    margin-left: 3%;
+    margin-left: 1%;
 }
 .contenedor5{
-    width:210px;
+    width:600px;
     height: 256px;
-    margin-left: 3%;
+    margin-left: 1%;
 }
