@@ -37,6 +37,7 @@
 .contenedor1{
    margin-left: 1%;
    width:600px;
+  
 }
 .contenedor2{
 
@@ -59,3 +60,38 @@
     height: 256px;
     margin-left: 1%;
 }
+
+
+@media all and (min-width: 640px) { 
+
+    .vistamovil2{
+  
+      display: none;
+      
+    }
+  }
+  @media all and (max-width: 639px) {
+  
+    .vistaNormal1{
+  
+      display: none;
+    
+    }
+  }
+  
+  
+  
+  @media (min-width: 640px) {
+    .vistaNormal1{
+  
+      
+    }
+  }
+  
+  @media (max-width: 639px) {
+     .vistaNormal1{
+     
+    }
+  
+  }
+  

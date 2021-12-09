@@ -28,162 +28,245 @@
       </div>
     </span> -->
         <!--end login button-->
-
-        <div class="menu-extras">
-            <div class="menu-item">
-                <!-- Mobile menu toggle-->
-                <a class="navbar-toggle" id="isToggle" (click)="toggleMenu()" [ngClass]="{'open': isCondensed === true}">
-                    <div class="lines">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </a>
-                <!-- End mobile menu toggle-->
-            </div>
-        </div>
-
-        <div id="navigation">
-            <!-- Navigation Menu-->
-            <ul class="navigation-menu" [class]="navClass" style="font-family: 'PPEiko-Thin' !important;">
-                <!-- <li><a routerLink="/" class="nav-link-ref">HOME</a></li> -->
-                <li class="has-submenu">
-                   <!--  <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">CUSTOM-MADE</a><span class="menu-arrow"></span>
-                    <ul class="submenu">
-                        <li class="nav-link-ref">
-                            <a href="javascript:void(0)" style="color: #6A1B9A !important;"  routerLink="/custome-made">ART</a>
-                        </li>
-                        <li class="nav-link-ref">
-                            <a href="javascript:void(0)"  style="color: #2E7D32!important;" routerLink="/">PRODUCT</a>
-                        </li>
-                        <li class="nav-link-ref">
-                            <a href="javascript:void(0)"  style="color: #00838F !important;" routerLink="/">SPACE DESIGNE</a>
-                        </li>
-                    </ul>-->
-                </li> 
+        
+        <div class ="vistamovil2">
+          <div class="menu-extras">
+              <div class="menu-item">
+                  <!-- Mobile menu toggle-->
+                  <a class="navbar-toggle" id="isToggle" (click)="toggleMenu()" [ngClass]="{'open': isCondensed === true}">
+                      <div class="lines">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </div>
+                  </a>
+                  <!-- End mobile menu toggle-->
+              </div>
+          </div>
+          <div id="navigation">
+              <!-- Navigation Menu-->
+              <ul class="navigation-menu" [class]="navClass" style="font-family: 'PPEiko-Thin' !important;">
+                  <!-- <li><a routerLink="/" class="nav-link-ref">HOME</a></li> -->
+                                
+                  <li class="has-submenu ">
+                      <a href="javascript:void(0)" (click)="onMenuClick($event)">PRODUCTS</a><span class="menu-arrow"></span>
                 
-                <li class="has-submenu">
-                    <a href="javascript:void(0)" (click)="onMenuClick($event)">PRODUCTS</a><span class="menu-arrow"></span>
-                    <ul class="submenu megamenu" style="background-color: #bebebe;">
-                      <li>
-                        <div class="contenedor1" style="background-color: #ffffff ">
-                        <ul>
-                          <li class="megamenu-head"  style="color: red !important; ">CASA MATERSANT</li>
-                          <li><a class="nav-link-ref" routerLink="/shop-wall">WALL ART</a></li>
-                          <li><a class="nav-link-ref" routerLink="/shop-furniture">FURNITURE</a></li>
-                          <li><a class="nav-link-ref" routerLink="/matersant-decor">HOME DECOR</a></li>
-                          <li><a class="nav-link-ref" routerLink="/matersant-finishing">HOME FINISHINGS</a></li>
-                          <li><a class="nav-link-ref" routerLink="/shop-accesories">CLOTHING + ACCESSORIES</a></li>
-                          <li><a class="nav-link-ref" routerLink="/index-upcycle">UPCYCLED</a></li>
-                        </ul>
-                      </div>
-                      </li>
-
-                      <li>
-                        <div class="contenedor2" style="background-color: #ffffff ">
-                        <ul>
-                          <li class="megamenu-head"  style="color: #e89f36 !important; "  >MATERIA CURADA</li>
-                          <li><a class="nav-link-ref" routerLink="/art-materia">ART</a></li>
-                          <li><a class="nav-link-ref" routerLink="/materia-decor"> HOME DECOR</a></li>
-                          <li><a class="nav-link-ref" routerLink="/accesories-materia">CLOTHING + ACCESSORIES</a></li>
-                        </ul>
-                      </div>
-                      </li>
-
-                      <li>
-                        <div class="contenedor3" style="background-color: #ffffff ">
-                        <ul>
-                          <li class="megamenu-head"   style="color: #2b2d91 !important; " >PRODUCT DESIGN</li>
-                          <li><a class="nav-link-ref" routerLink="/portfolio-grid-two">PORTFOLIO</a></li>
-                          <li><a class="nav-link-ref" routerLink="/custome-made">CUSTOME-MADE</a></li>
-                        </ul>
-                      </div>
-                      </li>
-                      <li>
-                        <div class="contenedor4" style="background-color: #ffffff ">
-                        <ul>
-                          <li class="megamenu-head"  style="color: #4aac91 !important; " >INTERIOR DESIGN</li>
-                          <li><a class="nav-link-ref" routerLink="/portfolio-masonry-two">PORTFOLIO</a></li>
-                          <li><a class="nav-link-ref" routerLink="/portfolio-masonry-three">BOOK AN APPOINTMENT</a></li>
-                        </ul>
-                      </div>
-                      </li>
-                      <li>
-                        <div class="contenedor5" style="background-color: #ffffff ">
-                        <ul>
-                          <li> <a class="nav-link-ref" style="color: #051b06 !important ;  " routerLink="/custome-made">CUSTOME MADE</a>
-                             </li>
-                        </ul>
-                      </div>
-                      </li>
-                    </ul>
-                  </li>
-          
-          
-
-           
-              <!--  <li class="has-submenu">
-                    <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">PRODUCTS</a><span class="menu-arrow"></span>
-                    <ul class="submenu">
-                        <div class="main-content color1" >
-                        <li class="nav-link-ref">
-                            <a href="javascript:void(0)" style="color: white !important;" routerLink="/">MATERSANT</a>
+                      <ul class="submenu megamenu">
+                        <li>
+                          <ul>
+                            <li class="megamenu-head "  style="color: red !important; ">CASA MATERSANT</li>
+                            <li><a class="nav-link-ref" routerLink="/shop-wall">WALL ART</a></li>
+                            <li><a class="nav-link-ref" routerLink="/shop-furniture">FURNITURE</a></li>
+                            <li><a class="nav-link-ref" routerLink="/matersant-decor">HOME DECOR</a></li>
+                            <li><a class="nav-link-ref" routerLink="/matersant-finishing">HOME FINISHINGS</a></li>
+                            <li><a class="nav-link-ref" routerLink="/shop-accesories">CLOTHING + ACCESSORIES</a></li>
+                            <li><a class="nav-link-ref" routerLink="/index-upcycle">UPCYCLED</a></li>
+                          </ul>
                         </li>
+    
+                        <li>
+                          <ul>
+                            <li class="megamenu-head"  style="color: #e89f36 !important; "  >MATERIA CURADA</li>
+                            <li><a class="nav-link-ref" routerLink="/art-materia">ART</a></li>
+                            <li><a class="nav-link-ref" routerLink="/materia-decor"> HOME DECOR</a></li>
+                            <li><a class="nav-link-ref" routerLink="/accesories-materia">CLOTHING + ACCESSORIES</a></li>
+                          </ul>
+                        </li>
+    
+                        <li>
+                          <ul>
+                            <li class="megamenu-head"   style="color: #2b2d91 !important; " >PRODUCT DESIGN</li>
+                            <li><a class="nav-link-ref" routerLink="/portfolio-grid-two">PORTFOLIO</a></li>
+                            <li><a class="nav-link-ref" routerLink="/custome-made">CUSTOME-MADE</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul>
+                            <li class="megamenu-head"  style="color: #4aac91 !important; " >INTERIOR DESIGN</li>
+                            <li><a class="nav-link-ref" routerLink="/portfolio-masonry-two">PORTFOLIO</a></li>
+                            <li><a class="nav-link-ref" routerLink="/portfolio-masonry-three">BOOK AN APPOINTMENT</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul>
+                            <li> <a class="nav-link-ref" style="color: #051b06 !important ;  " routerLink="/custome-made">CUSTOME MADE</a>
+                               </li>
+                          </ul>
+                        </li>
+                      </ul>
+    
+                    </li>
+                 
+                    <li><a routerLink="/aboutus" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">ABOUT</a> </li> <span class="menu-arrow"></span>
+                    <li><a routerLink="/contactus" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">CONTACT US</a> </li> <span class="menu-arrow"></span>
+                   </ul>
+            
+          </div>
+      </div>
+        <div class ="vistaNormal1">
+          <div class="menu-extras">
+              <div class="menu-item">
+                  <!-- Mobile menu toggle-->
+                  <a class="navbar-toggle" id="isToggle" (click)="toggleMenu()" [ngClass]="{'open': isCondensed === true}">
+                      <div class="lines">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </div>
+                  </a>
+                  <!-- End mobile menu toggle-->
+              </div>
+          </div>
+          <div id="navigation">
+              <!-- Navigation Menu-->
+              <ul class="navigation-menu" [class]="navClass" style="font-family: 'PPEiko-Thin' !important;">
+                  <!-- <li><a routerLink="/" class="nav-link-ref">HOME</a></li> -->
+                  <li class="has-submenu">
+                     <!--  <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">CUSTOM-MADE</a><span class="menu-arrow"></span>
+                      <ul class="submenu">
+                          <li class="nav-link-ref">
+                              <a href="javascript:void(0)" style="color: #6A1B9A !important;"  routerLink="/custome-made">ART</a>
+                          </li>
+                          <li class="nav-link-ref">
+                              <a href="javascript:void(0)"  style="color: #2E7D32!important;" routerLink="/">PRODUCT</a>
+                          </li>
+                          <li class="nav-link-ref">
+                              <a href="javascript:void(0)"  style="color: #00838F !important;" routerLink="/">SPACE DESIGNE</a>
+                          </li>
+                      </ul>-->
+                  </li> 
+                  
+                  <li class="has-submenu ">
+                      <a href="javascript:void(0)" (click)="onMenuClick($event)">PRODUCTS</a><span class="menu-arrow"></span>
+                      <!-- MENU DE NORMAL -->
+  
+                      <ul class="submenu megamenu" style="background-color: #bebebe;">
+                        <li>
+                          <div class="contenedor1 " style="background-color: #ffffff ">
+                          <ul>
+                            <li class="megamenu-head "  style="color: red !important; ">CASA MATERSANT</li>
+                            <li><a class="nav-link-ref" routerLink="/shop-wall">WALL ART</a></li>
+                            <li><a class="nav-link-ref" routerLink="/shop-furniture">FURNITURE</a></li>
+                            <li><a class="nav-link-ref" routerLink="/matersant-decor">HOME DECOR</a></li>
+                            <li><a class="nav-link-ref" routerLink="/matersant-finishing">HOME FINISHINGS</a></li>
+                            <li><a class="nav-link-ref" routerLink="/shop-accesories">CLOTHING + ACCESSORIES</a></li>
+                            <li><a class="nav-link-ref" routerLink="/index-upcycle">UPCYCLED</a></li>
+                          </ul>
                         </div>
-                        <div class="main-content color2" >
-                        <li class="nav-link-ref">
-                            <a href="javascript:void(0)" style="color: white!important;"  routerLink="/">MATERIA CURADA</a>
                         </li>
-                    </div>
-                    <div class="main-content color3" >
-                        <li class="nav-link-ref">
-                            <a href="javascript:void(0)" style="color: white !important;"  routerLink="/">THE ISSUE</a>
+  
+                        <li>
+                          <div class="contenedor2" style="background-color: #ffffff ">
+                          <ul>
+                            <li class="megamenu-head"  style="color: #e89f36 !important; "  >MATERIA CURADA</li>
+                            <li><a class="nav-link-ref" routerLink="/art-materia">ART</a></li>
+                            <li><a class="nav-link-ref" routerLink="/materia-decor"> HOME DECOR</a></li>
+                            <li><a class="nav-link-ref" routerLink="/accesories-materia">CLOTHING + ACCESSORIES</a></li>
+                          </ul>
+                        </div>
                         </li>
-                    </div>
-                    <div class="main-content color4" >
-                        <li class="nav-link-ref">
-                            <a href="javascript:void(0)" style="color: white !important;" routerLink="/">ALL</a>
+  
+                        <li>
+                          <div class="contenedor3" style="background-color: #ffffff ">
+                          <ul>
+                            <li class="megamenu-head"   style="color: #2b2d91 !important; " >PRODUCT DESIGN</li>
+                            <li><a class="nav-link-ref" routerLink="/portfolio-grid-two">PORTFOLIO</a></li>
+                            <li><a class="nav-link-ref" routerLink="/custome-made">CUSTOME-MADE</a></li>
+                          </ul>
+                        </div>
                         </li>
-                    </div>
-                    </ul>
-                </li> -->
-
-                
-             <!--    <li class="has-submenu">
-                    <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">ARCHIVE</a><span class="menu-arrow"></span>
-                    <ul class="submenu">
-                        <li class="nav-link-ref">
-                            <a href="javascript:void(0)" style="color: #6A1B9A !important;" routerLink="/">2018</a>   
+                        <li>
+                          <div class="contenedor4" style="background-color: #ffffff ">
+                          <ul>
+                            <li class="megamenu-head"  style="color: #4aac91 !important; " >INTERIOR DESIGN</li>
+                            <li><a class="nav-link-ref" routerLink="/portfolio-masonry-two">PORTFOLIO</a></li>
+                            <li><a class="nav-link-ref" routerLink="/portfolio-masonry-three">BOOK AN APPOINTMENT</a></li>
+                          </ul>
+                        </div>
                         </li>
-                        <li class="nav-link-ref">
-                            <a href="javascript:void(0)" style="color: #2E7D32!important;" routerLink="/">2019</a>
+                        <li>
+                          <div class="contenedor5" style="background-color: #ffffff ">
+                          <ul>
+                            <li> <a class="nav-link-ref" style="color: #051b06 !important ;  " routerLink="/custome-made">CUSTOME MADE</a>
+                               </li>
+                          </ul>
+                        </div>
                         </li>
-                        <li class="nav-link-ref">
-                            <a href="javascript:void(0)" style="color: #00838F !important;" routerLink="/">2020</a>
-                        </li>
-                        <li class="nav-link-ref">
-                            <a href="javascript:void(0)" style="color: #D84315 !important;" routerLink="/">2021</a>
-                        </li>
-                    </ul>
-                </li> 
-               <!--  <li class="nav-link-ref">
-                    <a href="javascript:void(0)"   routerLink="/aboutus">ABOUT</a>
-                </li>-->
-                
-            <li><a routerLink="/aboutus" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">ABOUT</a> </li> <span class="menu-arrow"></span>
-            <li><a routerLink="/contactus" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">CONTACT US</a> </li> <span class="menu-arrow"></span>
-           </ul>
-           
-          
-            <!--end navigation menu-->
-            <!-- <div class="buy-menu-btn d-none">
-                <a href="javascript: void(0);" target="_blank" class="btn btn-primary">Buy Now</a>
-            </div> -->
-            <!--end login button-->
-            <!--end login button-->
-        </div>
-        <!--end navigation-->
-    </div>
+                      </ul>
+  
+                      <!-- MENU DE MOVIL -->
+  
+  
+  
+                    </li>
+                 
+                    <li><a routerLink="/aboutus" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">ABOUT</a> </li> <span class="menu-arrow"></span>
+                    <li><a routerLink="/contactus" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">CONTACT US</a> </li> <span class="menu-arrow"></span>
+                   </ul>
+            
+  
+             
+                <!--  <li class="has-submenu">
+                      <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">PRODUCTS</a><span class="menu-arrow"></span>
+                      <ul class="submenu">
+                          <div class="main-content color1" >
+                          <li class="nav-link-ref">
+                              <a href="javascript:void(0)" style="color: white !important;" routerLink="/">MATERSANT</a>
+                          </li>
+                          </div>
+                          <div class="main-content color2" >
+                          <li class="nav-link-ref">
+                              <a href="javascript:void(0)" style="color: white!important;"  routerLink="/">MATERIA CURADA</a>
+                          </li>
+                      </div>
+                      <div class="main-content color3" >
+                          <li class="nav-link-ref">
+                              <a href="javascript:void(0)" style="color: white !important;"  routerLink="/">THE ISSUE</a>
+                          </li>
+                      </div>
+                      <div class="main-content color4" >
+                          <li class="nav-link-ref">
+                              <a href="javascript:void(0)" style="color: white !important;" routerLink="/">ALL</a>
+                          </li>
+                      </div>
+                      </ul>
+                  </li> -->
+  
+                  
+               <!--    <li class="has-submenu">
+                      <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Thin' !important;">ARCHIVE</a><span class="menu-arrow"></span>
+                      <ul class="submenu">
+                          <li class="nav-link-ref">
+                              <a href="javascript:void(0)" style="color: #6A1B9A !important;" routerLink="/">2018</a>   
+                          </li>
+                          <li class="nav-link-ref">
+                              <a href="javascript:void(0)" style="color: #2E7D32!important;" routerLink="/">2019</a>
+                          </li>
+                          <li class="nav-link-ref">
+                              <a href="javascript:void(0)" style="color: #00838F !important;" routerLink="/">2020</a>
+                          </li>
+                          <li class="nav-link-ref">
+                              <a href="javascript:void(0)" style="color: #D84315 !important;" routerLink="/">2021</a>
+                          </li>
+                      </ul>
+                  </li> 
+                 <!--  <li class="nav-link-ref">
+                      <a href="javascript:void(0)"   routerLink="/aboutus">ABOUT</a>
+                  </li>-->
+             
+             
+            
+              <!--end navigation menu-->
+              <!-- <div class="buy-menu-btn d-none">
+                  <a href="javascript: void(0);" target="_blank" class="btn btn-primary">Buy Now</a>
+              </div> -->
+              <!--end login button-->
+              <!--end login button-->
+          </div>
+          <!--end navigation-->
+      </div>
+  </div>
+  
     <!--end container-->
 </header>
 <!--end header-->
