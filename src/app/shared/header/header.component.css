@@ -60,7 +60,12 @@
     height: 256px;
     margin-left: 1%;
 }
-
+.position2{
+    margin-left: 250%;
+}
+.positionHeader{
+   margin-left: 66%;
+}
 
 @media all and (min-width: 640px) { 
 

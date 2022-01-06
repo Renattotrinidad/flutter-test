@@ -5,7 +5,7 @@
         <div>
             <a class="logo" href="https://matersant.ima.com.gt/" *ngIf="navClass !== 'nav-light'">
                 <img  src= "assets/images/casa.png "  class="l-dark logo-light-mode" height="60" alt="" >
-                <span class="l-dark logo-light-mode" height="24" style="color: #020202 !important; font-size: 28px; font-family: 'PPEiko-Medium' !important;">MATERSANT</span>
+                <span class="l-dark logo-light-mode" height="24" style="color: #020202 !important; font-size: 28px; font-family: 'PPEiko-Medium' !important;">CASA MATERSANT</span>
                 
             </a>
         </div>
@@ -30,7 +30,7 @@
                   <!-- <li><a routerLink="/" class="nav-link-ref">HOME</a></li> -->
                                 
                   <li class="has-submenu ">
-                      <a href="javascript:void(0)" (click)="onMenuClick($event)">PRODUCTS</a><span class="menu-arrow"></span>
+                      <a href="javascript:void(0)" (click)="onMenuClick($event)">SERVICES</a><span class="menu-arrow"></span>
                 
                       <ul class="submenu megamenu">
                         <li>
@@ -54,32 +54,13 @@
                           </ul>
                         </li>
     
-                        <li>
-                          <ul>
-                            <li class="megamenu-head"   style="color: #2b2d91 !important; " >PRODUCT DESIGN</li>
-                            <li><a class="nav-link-ref" routerLink="/portfolio-grid-two">PORTFOLIO</a></li>
-                            <li><a class="nav-link-ref" routerLink="/custome-made">CUSTOME-MADE</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <ul>
-                            <li class="megamenu-head"  style="color: #4aac91 !important; " >INTERIOR DESIGN</li>
-                            <li><a class="nav-link-ref" routerLink="/portfolio-masonry-two">PORTFOLIO</a></li>
-                            <li><a class="nav-link-ref" routerLink="/portfolio-masonry-three">BOOK AN APPOINTMENT</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <ul>
-                            <li> <a class="nav-link-ref" style="color: #051b06 !important ;  " routerLink="/custome-made">CUSTOME MADE</a>
-                               </li>
-                          </ul>
-                        </li>
+                    
                       </ul>
     
                     </li>
                  
+                    
                     <li><a routerLink="/aboutus" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">ABOUT</a> </li> <span class="menu-arrow"></span>
-                    <li><a routerLink="/contactus" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">CONTACT US</a> </li> <span class="menu-arrow"></span>
                    </ul>
             
           </div>
@@ -100,6 +81,7 @@
           </div>
           <div id="navigation">
               <!-- Navigation Menu-->
+            <div class="positionHeader">
               <ul class="navigation-menu" [class]="navClass" style="font-family: 'PPEiko-Thin' !important;">
                   <!-- <li><a routerLink="/" class="nav-link-ref">HOME</a></li> -->
                   <li class="has-submenu">
@@ -146,33 +128,6 @@
                           </ul>
                         </div>
                         </li>
-  
-                        <li>
-                          <div class="contenedor3" style="background-color: #ffffff ">
-                          <ul>
-                            <li class="megamenu-head"   style="color: #2b2d91 !important; " >PRODUCT DESIGN</li>
-                            <li><a class="nav-link-ref" routerLink="/portfolio-grid-two">PORTFOLIO</a></li>
-                            <li><a class="nav-link-ref" routerLink="/custome-made">CUSTOME-MADE</a></li>
-                          </ul>
-                        </div>
-                        </li>
-                        <li>
-                          <div class="contenedor4" style="background-color: #ffffff ">
-                          <ul>
-                            <li class="megamenu-head"  style="color: #4aac91 !important; " >INTERIOR DESIGN</li>
-                            <li><a class="nav-link-ref" routerLink="/portfolio-masonry-two">PORTFOLIO</a></li>
-                            <li><a class="nav-link-ref" routerLink="/portfolio-masonry-three">BOOK AN APPOINTMENT</a></li>
-                          </ul>
-                        </div>
-                        </li>
-                        <li>
-                          <div class="contenedor5" style="background-color: #ffffff ">
-                          <ul>
-                            <li> <a class="nav-link-ref" style="color: #051b06 !important ;  " routerLink="/custome-made">CUSTOME MADE</a>
-                               </li>
-                          </ul>
-                        </div>
-                        </li>
                       </ul>
   
                       <!-- MENU DE MOVIL -->
@@ -180,11 +135,74 @@
   
   
                     </li>
-                 
-                    <li><a routerLink="/aboutus" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">ABOUT</a> </li> <span class="menu-arrow"></span>
-                    <li><a routerLink="/contactus" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">CONTACT US</a> </li> <span class="menu-arrow"></span>
-                   </ul>
-            
+                
+                  <li class="has-submenu ">
+                    <a href="javascript:void(0)" (click)="onMenuClick($event)">SERVICES</a><span class="menu-arrow"></span>
+                    <!-- MENU DE NORMAL -->
+
+                    <ul class="submenu megamenu" style="background-color: #bebebe;">
+                      <li>
+                        <div class="contenedor1 " style="background-color: #ffffff ">
+                        <ul>
+                          <li class="megamenu-head "  style="color: red !important; ">CASA MATERSANT</li>
+                          <li><a class="nav-link-ref" routerLink="/shop-wall">WALL ART</a></li>
+                          <li><a class="nav-link-ref" routerLink="/shop-furniture">FURNITURE</a></li>
+                          <li><a class="nav-link-ref" routerLink="/matersant-decor">HOME DECOR</a></li>
+                          <li><a class="nav-link-ref" routerLink="/matersant-finishing">HOME FINISHINGS</a></li>
+                          <li><a class="nav-link-ref" routerLink="/shop-accesories">CLOTHING + ACCESSORIES</a></li>
+                          <li><a class="nav-link-ref" routerLink="/index-upcycle">UPCYCLED</a></li>
+                        </ul>
+                      </div>
+                      </li>
+
+                      <li>
+                        <div class="contenedor2" style="background-color: #ffffff ">
+                        <ul>
+                          <li class="megamenu-head"  style="color: #e89f36 !important; "  >MATERIA CURADA</li>
+                          <li><a class="nav-link-ref" routerLink="/art-materia">ART</a></li>
+                          <li><a class="nav-link-ref" routerLink="/materia-decor"> HOME DECOR</a></li>
+                          <li><a class="nav-link-ref" routerLink="/accesories-materia">CLOTHING + ACCESSORIES</a></li>
+                        </ul>
+                      </div>
+                      </li>
+
+                      <li>
+                        <div class="contenedor3" style="background-color: #ffffff ">
+                        <ul>
+                          <li class="megamenu-head"   style="color: #2b2d91 !important; " >PRODUCT DESIGN</li>
+                          <li><a class="nav-link-ref" routerLink="/portfolio-grid-two">PORTFOLIO</a></li>
+                          <li><a class="nav-link-ref" routerLink="/custome-made">CUSTOME-MADE</a></li>
+                        </ul>
+                      </div>
+                      </li>
+                      <li>
+                        <div class="contenedor4" style="background-color: #ffffff ">
+                        <ul>
+                          <li class="megamenu-head"  style="color: #4aac91 !important; " >INTERIOR DESIGN</li>
+                          <li><a class="nav-link-ref" routerLink="/portfolio-masonry-two">PORTFOLIO</a></li>
+                          <li><a class="nav-link-ref" routerLink="/portfolio-masonry-three">BOOK AN APPOINTMENT</a></li>
+                        </ul>
+                      </div>
+                      </li>
+                      <li>
+                        <div class="contenedor5" style="background-color: #ffffff ">
+                        <ul>
+                          <li> <a class="nav-link-ref" style="color: #051b06 !important ;  " routerLink="/custome-made">CUSTOME MADE</a>
+                             </li>
+                        </ul>
+                      </div>
+                      </li>
+                    </ul>
+
+                    <!-- MENU DE MOVIL -->
+
+
+
+                  </li>
+                  
+                  <li><a routerLink="/aboutus" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">ABOUT</a> </li> <span class="menu-arrow"></span>
+              </ul>
+            </div>
   
              
                 <!--  <li class="has-submenu">
