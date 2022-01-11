@@ -36,12 +36,14 @@
 
 .contenedor1{
    margin-left: 1%;
-   width:600px;
+   width:450px;
+
+   
   
 }
 .contenedor2{
 
-    width:600px;
+    width:900px;
     margin-left: 1%;
     height: 256px;
 }
@@ -66,6 +68,32 @@
 .positionHeader{
    margin-left: 66%;
 }
+
+.casamatersant{
+
+    background-color: #ca2311 ;
+}
+.materiacurada{
+    background-color: #e89f36 ;  
+}
+.productdesign{
+    background-color: #2b2d91 ; 
+}
+.interiordesign{
+    background-color: #4aac91 ; 
+}
+.art{
+    background-color: #051b06 ; 
+}
+
+div.vertical-line{
+    width: 1px; /* Line width */
+    background-color: black; /* Line color */
+    height: 100%; /* Override in-line if you want specific height. */
+    float: left; /* Causes the line to float to left of content. 
+      You can instead use position:absolute or display:inline-block
+      if this fits better with your design */
+  }
 
 @media all and (min-width: 640px) { 
 
