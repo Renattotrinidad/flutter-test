@@ -2488,6 +2488,7 @@ p {
 @media (min-width: 1025px) {
     #topnav .navigation-menu>li .submenu.megamenu {
         width: 100% !important
+    
     }
 }
 

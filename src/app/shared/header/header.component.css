@@ -48,19 +48,19 @@
     height: 256px;
 }
 .contenedor3{
-    width:600px;
-    margin-left: 1%;
-    height: 256px;
+    width: 100% ;
+    margin-left: 2%;
+    
 }
 .contenedor4{
-    width:600px;
+    width: 100% ;
     height: 256px;
-    margin-left: 1%;
+    margin-left: 2%;
 }
 .contenedor5{
-    width:600px;
+    width: 100% ;
     height: 256px;
-    margin-left: 1%;
+    margin-left: 2%;
 }
 .position2{
     margin-left: 250%;
@@ -68,6 +68,7 @@
 .positionHeader{
    margin-left: 66%;
 }
+
 
 .casamatersant{
 
@@ -91,6 +92,12 @@
     padding-left: 20%;
 max-width: 800%;
 }
+.matersant{
+    margin-left: 5%;
+}
+.mcurada{
+    margin-left: 2%;
+}
 div.vertical-line{
     width: 1px; /* Line width */
     background-color: black; /* Line color */
@@ -99,7 +106,15 @@ div.vertical-line{
       You can instead use position:absolute or display:inline-block
       if this fits better with your design */
   }
-
+  div.vertical-line{
+    width: px; /* Line width */
+    background-color: black; /* Line color */
+    height: 100%; /* Override in-line if you want specific height. */
+    float: right; /* Causes the line to float to left of content. 
+      You can instead use position:absolute or display:inline-block
+      if this fits better with your design */
+      
+  }
 @media all and (min-width: 640px) { 
 
     .vistamovil2{
