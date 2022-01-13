@@ -85,7 +85,12 @@
 .art{
     background-color: #051b06 ; 
 }
-
+.menuPrueba1{
+    width: 100%;
+    padding: 60%;
+    padding-left: 20%;
+max-width: 800%;
+}
 div.vertical-line{
     width: 1px; /* Line width */
     background-color: black; /* Line color */
@@ -125,6 +130,11 @@ div.vertical-line{
      .vistaNormal1{
      
     }
-  
+
+.menuGeneral{
+    width: 100%!;
+    height: 800%;
+}
+
   }
   
