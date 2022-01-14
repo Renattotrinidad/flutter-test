@@ -83,12 +83,13 @@
               <!-- Navigation Menu-->
             <div class="positionHeader">
               <ul class="  navigation-menu" [class]="navClass" style="font-family: 'PPEiko-Thin' !important;">
-                  <li class=" has-submenu ">
+                  <li  class=" has-submenu ">
                       <a href="javascript:void(0)" (click)="onMenuClick($event)">PRODUCTS</a><span class="menu-arrow"></span>
                       <!-- MENU DE NORMAL -->
   
                       <ul class="  submenu megamenu " style="background-color: #ffffff;">
-                        <li style="width: 48%;">
+                        <div class="cerrar" id ="cerrart"> <a  href="javascript:void(0)" (click)  = "closeMenuClick($event)"> </a> <img src="assets/images/x1.png"></div>
+                        <li style="width: 50%;">
                           <div class="matersant" style=" background-color: #ffffff ">
                           <ul>
                             <li class="casamatersant megamenu-head " style="color: white !important;" >CASA MATERSANT</li>
@@ -119,12 +120,13 @@
   
                     </li>
               
-                
                   <li class="has-submenu ">
                     <a href="javascript:void(0)" (click)="onMenuClick($event)">SERVICES</a><span class="menu-arrow"></span>
+               
+               
                     <ul class="submenu megamenu" style="background-color: #ffffff ;">
- 
-                      <li style="width: 32%;">
+                      <div class="cerrar"  id ="cerrart"> <a href ="cerrar()"> </a> <img src="assets/images/x1.png"></div>
+                      <li  style="width: 33%; border-right: 1px solid rgb(151, 150, 150);">
                         <div class="contenedor3">
                         <ul>
                           <li class="productdesign megamenu-head"  style="color: white !important" >PRODUCT DESIGN</li>
@@ -134,7 +136,7 @@
                       </div>
                       </li>
                   
-                      <li style="width: 32%;">
+                      <li style="width: 33%; border-right: 1px solid rgb(151, 150, 150);" >
                         <div class="contenedor4" style="background-color: #ffffff ">
                         <ul>
                           <li class="interiordesign megamenu-head"   style="color: white !important;" >INTERIOR DESIGN</li>
@@ -151,21 +153,13 @@
                           <li><a class="nav-link-ref" routerLink="/portfolio-masonry-three">COMMISION ART</a>
 
                           <li> 
-                            
                           </li>
                         </ul>
                       </div>
                       </li>
-                    
-
                     </ul>
-
-                    <!-- MENU DE MOVIL -->
-
-
-
+                    
                   </li>
-                  
                   <li><a routerLink="/aboutus" class="nav-link-ref" style="font-family: 'PPEiko-Thin' !important;">ABOUT</a> </li> <span class="menu-arrow"></span>
               </ul>
             </div>
@@ -231,6 +225,11 @@
           <!--end navigation-->
       </div>
   </div>
+  <script>
+    function cerrar(){
+      document.getElementById("cerrart").style.display="none";
+    }
+  </script>
   
     <!--end container-->
 </header>

@@ -36,7 +36,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  cerrar(){
+    document.getElementById("cerrart").style.display="none";
+  }
   _activateMenuDropdown() {
     /**
      * Menu activation reset
@@ -161,6 +163,21 @@ export class HeaderComponent implements OnInit {
       nextEl.classList.add("open");
     } else if (nextEl) {
       nextEl.classList.remove("open");
+    }
+    return false;
+  }
+
+  closeMenuClick(event) {
+    event.preventDefault();
+    const nextEl = event.target.nextSibling.nextSibling;
+    if (nextEl && !nextEl.classList.contains("close")) {
+      const parentEl = event.target.parentNode;
+      if (parentEl) {
+        parentEl.classList.remove("close");
+      }
+      nextEl.classList.add("close");
+    } else if (nextEl) {
+      nextEl.classList.remove("close");
     }
     return false;
   }

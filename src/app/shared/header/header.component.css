@@ -50,12 +50,15 @@
 .contenedor3{
     width: 100% ;
     margin-left: 2%;
+    height: 256px;
+    
     
 }
 .contenedor4{
     width: 100% ;
     height: 256px;
     margin-left: 2%;
+    
 }
 .contenedor5{
     width: 100% ;
@@ -68,11 +71,14 @@
 .positionHeader{
    margin-left: 66%;
 }
-
+.pruebadelineas{
+    border-right: 1px solid rgb(151, 150, 150);
+}
 
 .casamatersant{
 
     background-color: #ca2311 ;
+  
 }
 .materiacurada{
     background-color: #e89f36 ;  
@@ -94,6 +100,7 @@ max-width: 800%;
 }
 .matersant{
     margin-left: 5%;
+    border-right: 1px solid rgb(151, 150, 150);
 }
 .mcurada{
     margin-left: 2%;
@@ -115,6 +122,16 @@ div.vertical-line{
       if this fits better with your design */
       
   }
+  #columnas{
+    column-count:4;
+    column-gap:20px;
+    column-rule:4px dotted gray;
+ }
+ .cerrar{
+position: absolute;
+right: 3px;
+top:1px;
+ }
 @media all and (min-width: 640px) { 
 
     .vistamovil2{
