@@ -4,17 +4,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center">
                 <div class="page-next-level">
-                    <h4 class="title"> Work Masonry </h4>
-                    <div class="page-next">
-                        <nav aria-label="breadcrumb" class="d-inline-block">
-                            <ul class="breadcrumb bg-white rounded shadow mb-0">
-                                <li class="breadcrumb-item"><a routerLink="/index">Landrick</a></li>
-                                <li class="breadcrumb-item"><a href="javascript:void(0)">Pages</a></li>
-                                <li class="breadcrumb-item"><a href="javascript:void(0)">Work</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Masonry</li>
-                            </ul>
-                        </nav>
-                    </div>
+                    <h4 class="title" style="font-family: 'PPEiko-Medium' !important;"> Work Modern </h4>
                 </div>
             </div>
             <!--end col-->
@@ -24,6 +14,9 @@
     <!--end container-->
 </section>
 <!--end section-->
+<!-- Hero End -->
+
+<!-- Shape Start -->
 <div class="position-relative">
     <div class="shape overflow-hidden text-white">
         <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,14 +24,14 @@
         </svg>
     </div>
 </div>
-<!-- Hero End -->
+<!--Shape End-->
 
-<!-- Start -->
+<!-- Work Start -->
 <section class="section">
     <div class="container">
-        <div class="row">
-            <ul class="container-filter list-inline mb-0 filter-options text-center" id="filter">
-                <li class="list-inline-item categories-name border text-dark rounded ms-2" (click)="activeCategory('all')"
+        <div class="row"  style="font-family: 'PPEiko-Medium' !important;">
+            <ul class="col container-filter list-unstyled categories-filter text-center" id="filter">
+                <li class="list-inline-item categories-name border text-dark rounded" (click)="activeCategory('all')"
                     [ngClass]="{'active': galleryFilter ==='all'}">All</li>
                 <li class="list-inline-item categories-name border text-dark rounded ms-2"
                     (click)="activeCategory('branding')" [ngClass]="{'active': galleryFilter ==='branding'}">Branding
@@ -56,45 +49,31 @@
         </div>
         <!--end row-->
 
-        <div class="projects-wrapper mt-4 pt-2">
-            <ngx-masonry [options]="myOptions" class="row">
-                <div ngxMasonryItem class="col-md-6 col-12 spacing picture-item" *ngFor="let item of filterredImages">
-                    <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <img src="{{item.image}}" class="img-fluid" alt="work-image">
-                            <div class="overlay-work bg-dark"></div>
-                            <div class="content">
-                                <h5 class="mb-0"><a routerLink="/portfolio-detail-one"
-                                        class="text-white title">{{item.title}}</a></h5>
-                                <h6 class="text-light tag mb-0">{{item.text}}</h6>
-                            </div>
-                            <div class="icons text-center">
-                                <a (click)="open(i)" 
-                                    class="text-primary work-icon bg-white d-inline-block rounded-pill">
-                                    <i-feather name="camera" class="fea icon-sm image-icon"></i-feather>
-                                </a>
-                            </div>
+        <div id="grid" class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["branding"]'  routerLink="/shop-product-detail-two"
+                *ngFor="let item of filterredImages">
+                <div class="card work-container work-modern position-relative overflow-hidden shadow rounded border-0">
+                    <div class="card-body p-0">
+                        <img  src="{{item.image}}"  class="img-fluid rounded" alt="work-image">
+                        <div class="overlay-work bg-dark"></div>
+                        <div class="content">
+                            <a routerLink="/portfolio-detail-one"
+                                class="title text-white d-block fw-bold">{{item.title}}</a>
+                             <small class="text-light">{{item.type}}</small>
+                        </div>
+                        <div class="client">
+                            <small class="text-light user d-block"><i class="uil uil-user"></i> {{item.name}}</small>
+                            <small class="text-light date"><i class="muil uil-calendar-alt"></i> {{item.date}}</small>
                         </div>
                     </div>
                 </div>
-            </ngx-masonry>
+            </div>
+            <!--end col-->
         </div>
         <!--end row-->
 
         <!-- PAGINATION START -->
-        <div class="row">
-            <div class="col-12 mt-4 pt-2">
-                <ul class="pagination justify-content-center mb-0">
-                    <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Previous">Prev</a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
-                    <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
-                    <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                    <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Next">Next</a></li>
-                </ul>
-            </div>
-            <!--end col-->
-        </div>
+     
         <!--end row-->
         <!-- PAGINATION END -->
 
@@ -102,7 +81,7 @@
     <!--end container-->
 </section>
 <!--end section-->
-<!-- End -->
+<!-- Work End -->
 
 <!-- Back to top -->
 <a href="javascript: void(0);" class="btn btn-icon btn-primary back-to-top" id="back-to-top" [ngxScrollTo]="'#home'">

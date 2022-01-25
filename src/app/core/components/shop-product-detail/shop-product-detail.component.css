@@ -43,3 +43,17 @@
 .relatedpro{
     text-align: center;
 }
+.grid .grid-item-link {
+    position: relative;
+    width: 100%;
+}
+.grid {
+    position: relative;
+    width: auto;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    padding-bottom: 1em;
+}
+.containerimg{
+    
+}

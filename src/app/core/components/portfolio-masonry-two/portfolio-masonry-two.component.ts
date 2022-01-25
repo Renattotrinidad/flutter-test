@@ -13,101 +13,116 @@ import { Lightbox } from 'ngx-lightbox';
  */
 export class PortfolioMasonryTwoComponent implements OnInit {
 
-  /***
-   * Masonry Option Function
-   */
-  public myOptions: NgxMasonryOptions = {
-    horizontalOrder: true
-  };
-
-  /**
-   * Portfolio Masonry Two Data
-   */
+  
   filterredImages;
   galleryFilter = 'all';
-
-  private _album = [];
-
   list = [{
-    image: 'assets/images/work/13.jpg',
-    title: 'Iphone mockup',
-    text: 'Branding',
-    category: 'branding'
+    image: 'assets/images/work/1.jpg',
+    title: 'Shifting Perspective',
+    type: 'Studio',
+    category: 'branding',
+    name: 'Calvin Carlo',
+    date: '13th August, 2019'
   },
   {
-    image: 'assets/images/work/21.jpg',
-    title: 'Mockup Collection',
-    text: 'Mockup',
-    category: 'designing'
+    image: 'assets/images/work/2.jpg',
+    title: 'Colors Magazine',
+    type: 'Web Design',
+    category: 'designing',
+    name: 'Calvin Carlo',
+    date: '13th August, 2019'
   },
   {
-    image: 'assets/images/work/14.jpg',
-    title: 'Abstract images',
-    text: 'Abstract',
-    category: 'photography'
+    image: 'assets/images/work/3.jpg',
+    title: 'Spa Cosmetics',
+    type: 'Developing',
+    category: 'photography',
+    name: 'Calvin Carlo',
+    date: '13th August, 2019'
   },
   {
-    image: 'assets/images/work/22.jpg',
-    title: 'Yellow bg with Books',
-    text: 'Books',
-    category: 'development'
+    image: 'assets/images/work/4.jpg',
+    title: 'Riser Coffee',
+    type: 'Branding',
+    category: 'development',
+    name: 'Calvin Carlo',
+    date: '13th August, 2019'
   },
   {
-    image: 'assets/images/work/16.jpg',
-    title: 'Company V-card',
-    text: 'V-card',
-    category: 'branding'
+    image: 'assets/images/work/5.jpg',
+    title: 'Dancing With Myself',
+    type: 'Photography',
+    category: 'branding',
+    name: 'Calvin Carlo',
+    date: '13th August, 2019'
   },
   {
-    image: 'assets/images/work/15.jpg',
-    title: 'Coffee cup',
-    text: 'Cups',
-    category: 'designing'
+    image: 'assets/images/work/6.jpg',
+    title: 'New trends in SEO',
+    type: 'Business',
+    category: 'branding',
+    name: 'Calvin Carlo',
+    date: '13th August, 2019'
   },
   {
-    image: 'assets/images/work/23.jpg',
-    title: 'Mockup box with paints',
-    text: 'Photography',
-    category: 'branding'
+    image: 'assets/images/work/7.jpg',
+    title: 'Shifting Perspective',
+    type: 'Studio',
+    category: 'designing',
+    name: 'Calvin Carlo',
+    date: '13th August, 2019'
   },
   {
-    image: 'assets/images/work/17.jpg',
-    title: 'Pen and article',
-    text: 'Article',
-    category: 'development'
+    image: 'assets/images/work/8.jpg',
+    title: 'Colors Magazine',
+    type: 'Web Design',
+    category: 'development',
+    name: 'Calvin Carlo',
+    date: '13th August, 2019'
   },
   {
-    image: 'assets/images/work/24.jpg',
-    title: 'White mockup box',
-    text: 'Color',
-    category: 'photography'
+    image: 'assets/images/work/9.jpg',
+    title: 'Spa Cosmetics',
+    type: 'Developing',
+    category: 'branding',
+    name: 'Calvin Carlo',
+    date: '13th August, 2019'
   },
   {
-    image: 'assets/images/work/18.jpg',
-    title: 'Logo Vectors',
-    text: 'Logos',
-    category: 'photography'
+    image: 'assets/images/work/10.jpg',
+    title: 'Riser Coffee',
+    type: 'Branding',
+    category: 'designing',
+    name: 'Calvin Carlo',
+    date: '13th August, 2019'
+  },
+  {
+    image: 'assets/images/work/11.jpg',
+    title: 'Dancing With Myself',
+    type: 'Photography',
+    category: 'photography',
+    name: 'Calvin Carlo',
+    date: '13th August, 2019'
+  },
+  {
+    image: 'assets/images/work/12.jpg',
+    title: 'New trends in SEO',
+    type: 'Business',
+    category: 'development',
+    name: 'Calvin Carlo',
+    date: '13th August, 2019'
   }
   ];
 
-  constructor(private _lightbox: Lightbox) {
-    for (let i = 13; i <= 24; i++) {
-      const src = '../../../assets/images/work/' + i + '.jpg';
-      const caption = 'Image ' + i + ' caption here';
-      const thumb = '../../../assets/images/work/' + i + '-thumb.jpg';
-      const item = {
-        src: src,
-        caption: caption,
-        thumb: thumb
-      };
-      this._album.push(item);
-    }
-  }
+  constructor() { }
 
   ngOnInit(): void {
     this.filterredImages = this.list;
   }
 
+  /***
+   * Active all category selected
+   */
   activeCategory(category) {
     this.galleryFilter = category;
     if (this.galleryFilter === 'all') {
@@ -117,14 +132,5 @@ export class PortfolioMasonryTwoComponent implements OnInit {
     }
   }
 
-  open(index: number): void {
-    // open lightbox
-    this._lightbox.open(this._album, index);
-  }
-
-  close(): void {
-    // close lightbox programmatically
-    this._lightbox.close();
-  }
-
 }
+
