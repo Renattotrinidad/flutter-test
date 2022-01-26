@@ -29,7 +29,7 @@ import { ShopArtMateriaComponent } from './shop-art-materia/shop-art-materia.com
 import { ShopClothingComponent } from './shop-clothing/shop-clothing.component';
 import { ShopMatersantDecorComponent } from './shop-matersant-decor/shop-matersant-decor.component';
 import { ShopMatersantFinishingComponent } from './shop-matersant-finishing/shop-matersant-finishing.component';
-
+import { DetailTwoComponent } from './detail-two/detail-two.component';
 const routes: Routes = [
   {
     path: '',
@@ -65,6 +65,8 @@ const routes: Routes = [
       { path: 'shop-clothing', component:ShopClothingComponent } ,
       { path: 'matersant-decor', component:ShopMatersantDecorComponent } ,
       { path: 'matersant-finishing', component:ShopMatersantFinishingComponent } ,
+      { path: 'detail-two', component: DetailTwoComponent },
+      
     ]
   },
 
