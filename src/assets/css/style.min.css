@@ -2543,7 +2543,8 @@ p {
         transition: all 0.3s
     }
     #topnav .navigation-menu>li .submenu li a:hover {
-        color: #2f55d4 !important
+        color: #2f55d4 !important;
+        border: red solid;
     }
     #topnav .navigation-menu>li .submenu li ul {
         list-style: none;
