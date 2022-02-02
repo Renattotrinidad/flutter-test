@@ -59,6 +59,8 @@ import { ShopAccesoriesMateriaComponent } from './shop-accesories-materia/shop-a
 import { ShopArtMateriaComponent } from './shop-art-materia/shop-art-materia.component';
 import { IndexShopFurnitureComponent } from './index-shop-furniture/index-shop-furniture.component';
 import { DetailTwoComponent } from './detail-two/detail-two.component';
+import { ShopCheckoutsComponent } from './shop-checkouts/shop-checkouts.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
@@ -100,6 +102,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     ShopArtMateriaComponent,
     IndexShopFurnitureComponent,
     DetailTwoComponent,
+    ShopCheckoutsComponent,
+    WishlistComponent,
    
     
   ],

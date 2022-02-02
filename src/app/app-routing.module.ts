@@ -8,6 +8,7 @@ import { ShopProductsComponent } from './core/components/shop-products/shop-prod
 import { PortfolioGridThreeComponent } from './core/components/portfolio-grid-three/portfolio-grid-three.component';
 import { ShopProductDetailComponent } from './core/components/shop-product-detail/shop-product-detail.component';
 import { ShopCartComponent } from './core/components/shop-cart/shop-cart.component';
+import { ShopCheckoutsComponent } from './shop-checkouts/shop-checkouts.component';
 import { PortfolioMasonryTwoComponent } from './core/components/portfolio-masonry-two/portfolio-masonry-two.component';
 import { combineLatest } from 'rxjs/internal/operators';
 import { ArtComponent } from './core/components/art/art.component';
@@ -30,6 +31,8 @@ import { ShopClothingComponent } from './shop-clothing/shop-clothing.component';
 import { ShopMatersantDecorComponent } from './shop-matersant-decor/shop-matersant-decor.component';
 import { ShopMatersantFinishingComponent } from './shop-matersant-finishing/shop-matersant-finishing.component';
 import { DetailTwoComponent } from './detail-two/detail-two.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -44,6 +47,7 @@ const routes: Routes = [
       { path: 'portfolio-masonry-two', component: PortfolioMasonryTwoComponent },
       { path: '', redirectTo: 'index-shop', pathMatch: "full" },
       { path: 'shop-cart', component: ShopCartComponent },
+      { path: 'shop-checkouts', component: ShopCheckoutsComponent },
       { path: 'shop-product-detail', component: ShopProductDetailComponent },
       { path: 'shop-products', component: ShopProductsComponent },
       { path: 'aboutus', component: AboutusTwoComponent },
@@ -66,6 +70,7 @@ const routes: Routes = [
       { path: 'matersant-decor', component:ShopMatersantDecorComponent } ,
       { path: 'matersant-finishing', component:ShopMatersantFinishingComponent } ,
       { path: 'detail-two', component: DetailTwoComponent },
+      { path: 'wishlist', component: WishlistComponent },
       
     ]
   },

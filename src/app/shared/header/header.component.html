@@ -6,10 +6,8 @@
             <a class="logo" href="https://matersant.ima.com.gt/" *ngIf="navClass !== 'nav-light'">
                 <img  src= "assets/images/casa.png "  class="l-dark logo-light-mode" height="60" alt="" >
                 <span class="l-dark logo-light-mode" height="24" style="color: #020202 !important; font-size: 28px; font-family: 'PPEiko-Medium' !important;">CASA MATERSANT</span>
-                
             </a>
         </div>
-      
         <div class ="vistamovil2">
           <div class="menu-extras">
               <div class="menu-item">
@@ -28,10 +26,8 @@
               <!-- Navigation Menu-->
               <ul class="navigation-menu" [class]="navClass" >
                   <!-- <li><a routerLink="/" class="nav-link-ref">HOME</a></li> -->
-                                
                   <li class="has-submenu ">
-                      <a href="javascript:void(0)" (click)="onMenuClick($event) " style="font-family: 'PPEiko-Medium' !important;" >SERVICES</a><span class="menu-arrow"></span>
-                
+                      <a href="javascript:void(0)" (click)="onMenuClick($event) " style="font-family: 'PPEiko-Medium' !important;" >PRODUCTS</a><span class="menu-arrow"></span>
                       <ul class="submenu megamenu "  style="font-family: 'PPEiko-Medium' !important;">
                         <li>
                           <ul>
@@ -56,13 +52,36 @@
     
                     
                       </ul>
-    
                     </li>
-                 
+                    <li class="has-submenu ">
+                      <a href="javascript:void(0)" (click)="onMenuClick($event) " style="font-family: 'PPEiko-Medium' !important;" >SERVICES</a><span class="menu-arrow"></span>
+                      <ul class="submenu megamenu "  style="font-family: 'PPEiko-Medium' !important;">
+                        <li>
+                          <ul>
+                            <li class="megamenu-head "  style="color: red !important; ">CASA MATERSANT</li>
+                            <li><a class="nav-link-ref" routerLink="/shop-wall">WALL ART</a></li>
+                            <li><a class="nav-link-ref" routerLink="/shop-furniture">FURNITURE</a></li>
+                            <li><a class="nav-link-ref" routerLink="/matersant-decor">HOME DECOR</a></li>
+                            <li><a class="nav-link-ref" routerLink="/matersant-finishing">HOME FINISHINGS</a></li>
+                            <li><a class="nav-link-ref" routerLink="/shop-accesories">CLOTHING + ACCESSORIES</a></li>
+                            <li><a class="nav-link-ref" routerLink="/index-upcycle">UPCYCLED</a></li>
+                          </ul>
+                        </li>
+    
+                        <li>
+                          <ul>
+                            <li class="megamenu-head"  style="color: #e89f36 !important; font-family: 'PPEiko-Medium' !important;" >MATERIA CURADA</li>
+                            <li><a class="nav-link-ref" style="font-family: 'PPEiko-Medium' !important;" routerLink="/art-materia">ART</a></li>
+                            <li><a class="nav-link-ref" style="font-family: 'PPEiko-Medium' !important;" routerLink="/materia-decor"> HOME DECOR</a></li>
+                            <li><a class="nav-link-ref" style="font-family: 'PPEiko-Medium' !important;" routerLink="/accesories-materia">CLOTHING + ACCESSORIES</a></li>
+                          </ul>
+                        </li>
+    
                     
+                      </ul>
+                    </li>
                     <li><a routerLink="/aboutus" class="nav-link-ref" style="font-family: 'PPEiko-Medium' !important;">ABOUT</a> </li> <span class="menu-arrow"></span>
                    </ul>
-            
           </div>
       </div>
         <div class ="vistaNormal1">
@@ -82,12 +101,12 @@
           <div id="navigation">
               <!-- Navigation Menu-->
             <div class="positionHeader">
-              <ul class="  navigation-menu" [class]="navClass" style="font-family: 'PPEiko-Medium' !important;">
+              <ul class="navigation-menu" [class]="navClass" style="font-family: 'PPEiko-Medium' !important;">
                   <li  class=" has-submenu " >
                       <a href="javascript:void(0)" (click)="onMenuClick($event)" style="font-family: 'PPEiko-Medium' !important;">PRODUCTS</a><span class="menu-arrow"></span>
                       <!-- MENU DE NORMAL -->
   
-                      <ul class="  submenu megamenu " style="background-color: #ffffff;">
+                      <ul class="submenu megamenu " style="background-color: #ffffff;">
                         <div class="cerrar"  id ="cerrart"> <a href ="javascript:cerrar()"> </a> <!--<img src="assets/images/x1.png">--></div>  
                         <li style="width: 50%;">
                           <div class="matersant" style=" background-color: #ffffff ">
@@ -100,7 +119,6 @@
                             <li><a class="nav-link-ref" style="font-family: 'PPEiko-Medium' !important;" routerLink="/shop-accesories">CLOTHING + ACCESSORIES</a></li>
                             <li><a class="nav-link-ref" style="font-family: 'PPEiko-Medium' !important;" routerLink="/index-upcycle">NFT</a></li>
                           </ul>
-                          
                         </div>
                         </li>
                         <li style="width: 48%;">
@@ -113,17 +131,10 @@
                           </ul>
                         </div>
                         </li>
-                     
-
                       </ul>
-
-  
                     </li>
-              
                   <li class="has-submenu ">
                     <a href="javascript:void(0)" (click)="onMenuClick($event)"  style="font-family: 'PPEiko-Medium' !important;">SERVICES</a><span class="menu-arrow"></span>
-               
-               
                     <ul class="submenu megamenu" style="background-color: #ffffff ;">
                       <div class="cerrar"  id ="cerrart"> <a href ="javascript:cerrar()"> </a><!--<img src="assets/images/x1.png">--></div>
                       <li  style="width: 33%; border-right: 1px solid rgb(151, 150, 150);">
@@ -163,6 +174,12 @@
                   <li><a routerLink="/aboutus" class="nav-link-ref" style="font-family: 'PPEiko-Medium' !important;">ABOUT</a> </li> <span class="menu-arrow"></span> 
                   <ul class="buy-button list-inline mb-0" >
     
+                  
+                    <li class="list-inline-item mb-0 pe-1">
+                      <a href="javascript:void(0);" class="btn btn-icon btn-soft-primary" (click)="wishListModal(content)"><i
+                          class="uil uil-heart align-middle icons"></i></a>
+                    </li>
+
                     <li  style="font-family: 'PPEiko-Medium' !important;" class=" list-inline-item mb-0 pe-1">
                       <div class="dropdown" ngbDropdown>
                         <button type="button" class="btn btn-icon btn-soft-primary dropdown-toggle" ngbDropdownToggle data-bs-toggle="dropdown"
@@ -172,31 +189,25 @@
                           style="width: 300px;">
                           <div class="pb-4">
                             <a href="javascript:void(0)" class="d-flex align-items-center">
-                              <img src="assets/images/shop/product/s-1.jpg" class="shadow rounded" style="max-height: 64px;" alt="">
+                              <img src="assets/images/p4.jpg" width="100" height="150"  class=""  >
                               <div  class="flex-1 text-start ms-3">
-                                <h6 class="text-dark mb-0"  style="font-family: 'PPEiko-Medium' !important;" >T-shirt (M)</h6>
-                                <p class="text-muted mb-0" style="font-family: 'PPEiko-Medium' !important;">$320 X 2</p>
+                                <h6 class="text-dark mb-0"  style="font-family: 'PPEiko-Medium' !important;" >T-shirt </h6>
+                                <p class="text-muted mb-0" style="font-family: 'PPEiko-thin' !important;">Información</p>
+                                <p class="text-muted mb-0" style="font-family: 'PPEiko-thin' !important;">$320</p>
                               </div>
-                              <h6 class="text-dark mb-0"  style="font-family: 'PPEiko-Medium' !important;">$640</h6>
+                              
                             </a>
             
-                            <a href="javascript:void(0)" class="d-flex align-items-center mt-4">
-                              <img src="assets/images/shop/product/s-2.jpg" class="shadow rounded" style="max-height: 64px;" alt="">
-                              <div class="flex-1 text-start ms-3">
-                                <h6 class="text-dark mb-0"  style="font-family: 'PPEiko-Medium' !important;">Bag</h6>
-                                <p class="text-muted mb-0"  style="font-family: 'PPEiko-Medium' !important;">$50 X 5</p>
-                              </div>
-                              <h6 class="text-dark mb-0"  style="font-family: 'PPEiko-Medium' !important;">$250</h6>
-                            </a>
+                            <td class="text-center qty-icons" >
+                              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="btn btn-icon btn-soft-primary minus">-</button>
+                              <input min="0" name="quantity" value="7" type="number"
+                                class="btn btn-icon btn-soft-primary qty-btn quantity m-1">
+                              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="btn btn-icon btn-soft-primary plus">+</button>
+                            </td>
             
-                            <a href="javascript:void(0)" class="d-flex align-items-center mt-4">
-                              <img src="assets/images/shop/product/s-3.jpg" class="shadow rounded" style="max-height: 64px;" alt="">
-                              <div class="flex-1 text-start ms-3">
-                                <h6 class="text-dark mb-0" style="font-family: 'PPEiko-Medium' !important;" >Watch (Men)</h6>
-                                <p class="text-muted mb-0"  style="font-family: 'PPEiko-Medium' !important;">$800 X 1</p>
-                              </div>
-                              <h6 class="text-dark mb-0" style="font-family: 'PPEiko-Medium' !important;" >$800</h6>
-                            </a>
+
                           </div>
             
                           <div class="d-flex align-items-center justify-content-between pt-4 border-top">
@@ -205,16 +216,13 @@
                           </div>
             
                           <div class="mt-3 text-center">
-                            <a href="/shop-cart" class="btn btn-primary me-2"  style="font-family: 'PPEiko-Medium' !important;">View Cart</a>
-                            <a href="javascript:void(0)" class="btn btn-primary" style="font-family: 'PPEiko-Medium' !important;">Checkout</a>
+                            <a class="botones" routerLink="/shop-cart" style= "color: black;" >Go to Cart</a>
+                            <a class="botones" routerLink="/shop-checkouts" style= "color: black;" >Check Out</a>
+                            
                           </div>
-                          <p class="text-muted text-start mt-1 mb-0"  style="font-family: 'PPEiko-Medium' !important;">*T&amp;C Apply</p>
+                         
                         </div>
                       </div>
-                    </li>
-                    <li class="list-inline-item mb-0 pe-1">
-                      <a href="javascript:void(0);" class="btn btn-icon btn-soft-primary" (click)="wishListModal(content)"><i
-                          class="uil uil-heart align-middle icons"></i></a>
                     </li>
             
                     <ng-template #content>
@@ -229,7 +237,7 @@
                               <h4  style="font-family: 'PPEiko-Medium' !important;" >Your wishlist is empty.</h4>
                               <p class="text-muted"  style="font-family: 'PPEiko-Medium' !important;">Create your first wishlist request...</p>
                               <div class="mt-4">
-                                <a href="javascript:void(0)" class="btn btn-outline-primary" style="font-family: 'PPEiko-Medium' !important;" >+ Create new wishlist</a>
+                                <a href="/wishlist" class="btn btn-outline-primary" style="font-family: 'PPEiko-Medium' !important;" >+ Create new wishlist</a>
                               </div>
                             </div>
                           </div>
