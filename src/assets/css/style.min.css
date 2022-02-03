@@ -2546,6 +2546,22 @@ p {
         color: #2f55d4 !important;
         border: red solid;
     }
+    #topnav .navigation-menu>li .submenu-dos li a {
+        display: block;
+        padding: 10px 20px;
+        clear: both;
+        white-space: nowrap;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        font-weight: 700;
+        color: #3c4858 !important;
+        transition: all 0.3s
+    }
+    #topnav .navigation-menu>li .submenu-dos li a:hover {
+        color: #2f55d4 !important;
+        border: blue solid;
+    }
     #topnav .navigation-menu>li .submenu li ul {
         list-style: none;
         padding-left: 0;

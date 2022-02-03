@@ -1,203 +1,179 @@
 @font-face {
-    font-family: 'PPEiko-Medium';
-    src: url('../../../assets/fonts/PPEiko-Medium.otf') format('opentype');
-    font-style: normal;
-    
-    font-weight: normal;
+  font-family: "PPEiko-Medium";
+  src: url("../../../assets/fonts/PPEiko-Medium.otf") format("opentype");
+  font-style: normal;
+
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: 'PPEiko-Thin';
-    src: url('../../../assets/fonts/PPEiko-Thin.otf') format('opentype');
-    font-style: normal;
-    font-weight: normal;
+  font-family: "PPEiko-Thin";
+  src: url("../../../assets/fonts/PPEiko-Thin.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
 }
 
-.color1{
-    background-color: #ca2311;
-    font-style: oblique;
-    color:white;
+.color1 {
+  background-color: #ca2311;
+  font-style: oblique;
+  color: white;
 }
 
-.color2{
-    background-color: #e89f36;
-    font-style: oblique;
+.color2 {
+  background-color: #e89f36;
+  font-style: oblique;
 }
 
-.color3{
-    background-color: #2b2e91;
-    font-style: oblique;
+.color3 {
+  background-color: #2b2e91;
+  font-style: oblique;
 }
 
-.color4{
-    background-color: #4aac91;
-    font-style: oblique;
+.color4 {
+  background-color: #4aac91;
+  font-style: oblique;
 }
 
-.contenedor1{
-   margin-left: 1%;
-   width:450px;
-
-   
-  
+.contenedor1 {
+  margin-left: 1%;
+  width: 450px;
 }
-.contenedor2{
-
-    width:900px;
-    margin-left: 1%;
-    height: 256px;
+.contenedor2 {
+  width: 900px;
+  margin-left: 1%;
+  height: 256px;
 }
-.contenedor3{
-    width: 100% ;
-    margin-left: 2%;
-    height: 256px;
-    
-    
+.contenedor3 {
+  width: 100%;
+  margin-left: 2%;
+  height: 256px;
 }
-.contenedor4{
-    width: 100% ;
-    height: 256px;
-    margin-left: 2%;
-    
+.contenedor4 {
+  width: 100%;
+  height: 256px;
+  margin-left: 2%;
 }
-.contenedor5{
-    width: 100% ;
-    height: 256px;
-    margin-left: 2%;
+.contenedor5 {
+  width: 100%;
+  height: 256px;
+  margin-left: 2%;
 }
-.position2{
-    margin-left: 250%;
+.position2 {
+  margin-left: 250%;
 }
-.positionHeader{
-   margin-left: 57%;
+.positionHeader {
+  margin-left: 57%;
 }
-.pruebadelineas{
-    border-right: 1px solid rgb(151, 150, 150);
+.pruebadelineas {
+  border-right: 1px solid rgb(151, 150, 150);
 }
 
-.casamatersant{
-
-    background-color: #ca2311 ;
-  
+.casamatersant {
+  background-color: #ca2311;
 }
-.materiacurada{
-    background-color: #e89f36 ;  
+.materiacurada {
+  background-color: #e89f36;
 }
-.productdesign{
-    background-color: #2b2d91 ; 
+.productdesign {
+  background-color: #2b2d91;
 }
-.botones{
-    text-decoration: none;
-    border: 1px solid #000;
-    border-radius: 20px;
-    padding: 0.5em 1em;
-    text-transform: uppercase;
-    letter-spacing: 0.075em;
-    width: 17em;
-    font-size: 80%;
-    text-align: center;
-    margin: 0.25em 0;
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-        background-image: none;
-        background: transparent;
-        background-color: transparent;
-        color: inherit;
-        outline: none;
-        padding: 0.25em 1em;
-        border: 1px solid #000;
-        text-decoration: none;
-        font-family: inherit;
-        -webkit-transition: all 500ms ease-out;
-        -moz-transition: all 500ms ease-out;
-        -ms-transition: all 500ms ease-out;
-        -o-transition: all 500ms ease-out;
-        transition: all 500ms ease-out;
-    
+.botones {
+  text-decoration: none;
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  width: 17em;
+  font-size: 80%;
+  text-align: center;
+  margin: 0.25em 0;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  background-image: none;
+  background: transparent;
+  background-color: transparent;
+  color: inherit;
+  outline: none;
+  padding: 0.25em 1em;
+  border: 1px solid #000;
+  text-decoration: none;
+  font-family: inherit;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
-.interiordesign{
-    background-color: #4aac91 ; 
+.interiordesign {
+  background-color: #4aac91;
 }
-.art{
-    background-color: #051b06 ; 
+.art {
+  background-color: #051b06;
 }
-.menuPrueba1{
-    width: 100%;
-    padding: 60%;
-    padding-left: 20%;
-max-width: 800%;
+.menuPrueba1 {
+  width: 100%;
+  padding: 60%;
+  padding-left: 20%;
+  max-width: 800%;
 }
-.matersant{
-    margin-left: 5%;
-    border-right: 1px solid rgb(151, 150, 150);
+.matersant {
+  margin-left: 5%;
+  border-right: 1px solid rgb(151, 150, 150);
 }
-.mcurada{
-    margin-left: 2%;
+.mcurada {
+  margin-left: 2%;
 }
-div.vertical-line{
-    width: 1px; /* Line width */
-    background-color: black; /* Line color */
-    height: 100%; /* Override in-line if you want specific height. */
-    float: left; /* Causes the line to float to left of content. 
+div.vertical-line {
+  width: 1px; /* Line width */
+  background-color: black; /* Line color */
+  height: 100%; /* Override in-line if you want specific height. */
+  float: left; /* Causes the line to float to left of content. 
       You can instead use position:absolute or display:inline-block
       if this fits better with your design */
-  }
-  div.vertical-line{
-    width: px; /* Line width */
-    background-color: black; /* Line color */
-    height: 100%; /* Override in-line if you want specific height. */
-    float: right; /* Causes the line to float to left of content. 
+}
+div.vertical-line {
+  width: px; /* Line width */
+  background-color: black; /* Line color */
+  height: 100%; /* Override in-line if you want specific height. */
+  float: right; /* Causes the line to float to left of content. 
       You can instead use position:absolute or display:inline-block
       if this fits better with your design */
-      
-  }
-  #columnas{
-    column-count:4;
-    column-gap:20px;
-    column-rule:4px dotted gray;
- }
- .cerrar{
-position: absolute;
-right: 3px;
-top:1px;
- }
-@media all and (min-width: 640px) { 
+}
+#columnas {
+  column-count: 4;
+  column-gap: 20px;
+  column-rule: 4px dotted gray;
+}
+.cerrar {
+  position: absolute;
+  right: 3px;
+  top: 1px;
+}
 
-    .vistamovil2{
-  
-      display: none;
-      
-    }
+@media all and (min-width: 640px) {
+  .vistamovil2 {
+    display: none;
   }
-  @media all and (max-width: 639px) {
-  
-    .vistaNormal1{
-  
-      display: none;
-    
-    }
+}
+@media all and (max-width: 639px) {
+  .vistaNormal1 {
+    display: none;
   }
-  
-  
-  
-  @media (min-width: 640px) {
-    .vistaNormal1{
-  
-      
-    }
-  }
-  
-  @media (max-width: 639px) {
-     .vistaNormal1{
-     
-    }
+}
 
-.menuGeneral{
+@media (min-width: 640px) {
+  .vistaNormal1 {
+  }
+}
+
+@media (max-width: 639px) {
+  .vistaNormal1 {
+  }
+
+  .menuGeneral {
     width: 100%!;
     height: 800%;
-}
-
-
   }
-  
+}
