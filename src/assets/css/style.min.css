@@ -2546,6 +2546,76 @@ p {
         color: #2f55d4 !important;
         border: red solid;
     }
+
+    #topnav .navigation-menu>li .submenu-dos li a {
+        display: block;
+        padding: 10px 20px;
+        clear: both;
+        white-space: nowrap;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        font-weight: 700;
+        color: #3c4858 !important;
+        transition: all 0.3s
+    }
+    #topnav .navigation-menu>li .submenu-dos li a:hover {
+        color: #2f55d4 !important;
+        border: #e89f36 solid;
+    }
+    
+    #topnav .navigation-menu>li .submenu-tres li a {
+        display: block;
+        padding: 10px 20px;
+        clear: both;
+        white-space: nowrap;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        font-weight: 700;
+        color: #3c4858 !important;
+        transition: all 0.3s
+    }
+    #topnav .navigation-menu>li .submenu-tres li a:hover {
+        color: #2f55d4 !important;
+        border: #2b2d91 solid;
+    }
+    #topnav .navigation-menu>li .submenu-cuatro li a {
+        display: block;
+        padding: 10px 20px;
+        clear: both;
+        white-space: nowrap;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        font-weight: 700;
+        color: #3c4858 !important;
+        transition: all 0.3s
+    }
+    #topnav .navigation-menu>li .submenu-cuatro li a:hover {
+        color: #2f55d4 !important;
+        border: #4aac91 solid;
+    }
+    
+    #topnav .navigation-menu>li .submenu-cinco li a {
+        display: block;
+        padding: 10px 20px;
+        clear: both;
+        white-space: nowrap;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        font-weight: 700;
+        color: #3c4858 !important;
+        transition: all 0.3s
+    }
+    #topnav .navigation-menu>li .submenu-cinco li a:hover {
+        color: #2f55d4 !important;
+        border: #051b06 solid;
+    }
+    
+    
+
     #topnav .navigation-menu>li .submenu li ul {
         list-style: none;
         padding-left: 0;
@@ -5020,7 +5090,7 @@ p {
 }
 
 .footer {
-    background: #202942;
+    background: #d9dbe0  ;
     padding: 60px 0;
     position: relative;
     color: #adb5bd

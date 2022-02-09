@@ -48,20 +48,20 @@
     height: 256px;
 }
 .contenedor3{
-    width: 100% ;
+ 
     margin-left: 2%;
     height: 256px;
     
     
 }
 .contenedor4{
-    width: 100% ;
+  
     height: 256px;
     margin-left: 2%;
     
 }
 .contenedor5{
-    width: 100% ;
+    
     height: 256px;
     margin-left: 2%;
 }
@@ -157,6 +157,9 @@ div.vertical-line{
     column-gap:20px;
     column-rule:4px dotted gray;
  }
+.wish{
+    padding-top:22px;
+}
  .cerrar{
 position: absolute;
 right: 3px;

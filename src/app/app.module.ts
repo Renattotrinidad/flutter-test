@@ -61,6 +61,8 @@ import { IndexShopFurnitureComponent } from './index-shop-furniture/index-shop-f
 import { DetailTwoComponent } from './detail-two/detail-two.component';
 import { ShopCheckoutsComponent } from './shop-checkouts/shop-checkouts.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { ProductPortfolioComponent } from './product-portfolio/product-portfolio.component';
+import { InteriorPortfolioComponent } from './interior-portfolio/interior-portfolio.component';
 
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
@@ -104,6 +106,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     DetailTwoComponent,
     ShopCheckoutsComponent,
     WishlistComponent,
+    ProductPortfolioComponent,
+    InteriorPortfolioComponent,
    
     
   ],

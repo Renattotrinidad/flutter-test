@@ -15,39 +15,30 @@ export class PortfolioMasonryTwoComponent implements OnInit {
 
   
   filterredImages;
-  galleryFilter = 'all';
   list = [{
-    image: 'assets/images/work/1.jpg',
-    title: 'Shifting Perspective',
-    type: 'Studio',
-    category: 'branding',
-    name: 'Calvin Carlo',
-    date: '13th August, 2019'
+    id:  1 ,
+    imageName: "jamesport",
+    image: 'assets/images/portfolio/PRUEBAA.JPG',
+    title: 'Wall Street Manhattan',
+    
   },
   {
-    image: 'assets/images/work/2.jpg',
-    title: 'Colors Magazine',
+    image: 'assets/images/portfolio/PRUEBAA.JPG',
+    title: 'Jamesport, New York',
     type: 'Web Design',
     category: 'designing',
     name: 'Calvin Carlo',
     date: '13th August, 2019'
   },
   {
-    image: 'assets/images/work/3.jpg',
-    title: 'Spa Cosmetics',
+    image: 'assets/images/portfolio/PRUEBAA.JPG',
+    title: 'Santo Spirito, Antigua Guatemala',
     type: 'Developing',
     category: 'photography',
     name: 'Calvin Carlo',
     date: '13th August, 2019'
   },
-  {
-    image: 'assets/images/work/4.jpg',
-    title: 'Riser Coffee',
-    type: 'Branding',
-    category: 'development',
-    name: 'Calvin Carlo',
-    date: '13th August, 2019'
-  },
+ 
   {
     image: 'assets/images/work/5.jpg',
     title: 'Dancing With Myself',
@@ -73,6 +64,14 @@ export class PortfolioMasonryTwoComponent implements OnInit {
     date: '13th August, 2019'
   },
   {
+    image: 'assets/images/work/5.jpg',
+    title: 'Dancing With Myself',
+    type: 'Photography',
+    category: 'branding',
+    name: 'Calvin Carlo',
+    date: '13th August, 2019'
+  },
+  {
     image: 'assets/images/work/8.jpg',
     title: 'Colors Magazine',
     type: 'Web Design',
@@ -88,30 +87,7 @@ export class PortfolioMasonryTwoComponent implements OnInit {
     name: 'Calvin Carlo',
     date: '13th August, 2019'
   },
-  {
-    image: 'assets/images/work/10.jpg',
-    title: 'Riser Coffee',
-    type: 'Branding',
-    category: 'designing',
-    name: 'Calvin Carlo',
-    date: '13th August, 2019'
-  },
-  {
-    image: 'assets/images/work/11.jpg',
-    title: 'Dancing With Myself',
-    type: 'Photography',
-    category: 'photography',
-    name: 'Calvin Carlo',
-    date: '13th August, 2019'
-  },
-  {
-    image: 'assets/images/work/12.jpg',
-    title: 'New trends in SEO',
-    type: 'Business',
-    category: 'development',
-    name: 'Calvin Carlo',
-    date: '13th August, 2019'
-  }
+  
   ];
 
   constructor() { }
@@ -123,14 +99,7 @@ export class PortfolioMasonryTwoComponent implements OnInit {
   /***
    * Active all category selected
    */
-  activeCategory(category) {
-    this.galleryFilter = category;
-    if (this.galleryFilter === 'all') {
-      this.filterredImages = this.list;
-    } else {
-      this.filterredImages = this.list.filter(x => x.category === this.galleryFilter);
-    }
-  }
+
 
 }
 

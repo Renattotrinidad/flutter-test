@@ -3,10 +3,14 @@
     <div class="container">
         <!-- Logo container-->
         <div>
-            <a class="logo" href="https://matersant.ima.com.gt/" *ngIf="navClass !== 'nav-light'">
+            <a 
+              class="logo" href="https://matersant.ima.com.gt/" *ngIf="navClass !== 'nav-light'">
                 <img  src= "assets/images/casa.png "  class="l-dark logo-light-mode" height="60" alt="" >
-                <span class="l-dark logo-light-mode" height="24" style="color: #020202 !important; font-size: 28px; font-family: 'PPEiko-Medium' !important;">CASA MATERSANT</span>
             </a>
+            <a 
+            class="logo" >
+              <span class="l-dark logo-light-mode" height="24" style="color: #020202 !important; font-size: 28px; font-family: 'PPEiko-Medium' !important;">CASA MATERSANT</span>
+          </a>
         </div>
         <div class ="vistamovil2">
           <div class="menu-extras">
@@ -61,7 +65,7 @@
                         <li>
                           <ul>
                            <li class="productdesign megamenu-head"  style="color: white !important" >PRODUCT DESIGN</li>
-                           <li><a class="nav-link-ref" routerLink="/portfolio-masonry-two">PORTFOLIO</a></li>
+                           <li><a class="nav-link-ref" routerLink="/product-portfolio">PORTFOLIO</a></li>
                            <li><a class="nav-link-ref" routerLink="">CUSTOM-MAKE YOUR OWN PIECE</a></li>
                           </ul>
                         </li>
@@ -84,7 +88,7 @@
                       </ul>
                     </li>
                     <li><a routerLink="/aboutus" class="nav-link-ref" style="font-family: 'PPEiko-Medium' !important;">ABOUT</a> </li> <span class="menu-arrow"></span>
-                   </ul>
+             </ul>
           </div>
       </div>
         <div class ="vistaNormal1">
@@ -111,7 +115,8 @@
   
                       <ul class="submenu megamenu " style="background-color: #ffffff;">
                         <div class="cerrar"  id ="cerrart"> <a href ="javascript:cerrar()"> </a> <!--<img src="assets/images/x1.png">--></div>  
-                        <li  style="width: 50%;">
+                        
+                        <li  class="uno" style="width: 50%;">
                           <div class="matersant" style=" background-color: #ffffff ">
                           <ul>
                             <li class="casamatersant megamenu-head " style="color: white !important; font-family: 'PPEiko-Medium' !important;" >CASA MATERSANT</li>
@@ -127,7 +132,7 @@
 
                         <li style="width: 48%;">
                           <div class="mcurada" style="background-color: #ffffff ">
-                          <ul>
+                          <ul class=submenu-dos>
                             <li class="materiacurada megamenu-head"  style="color: white !important; font-family: 'PPEiko-Medium' !important;" >MATERIA CURADA</li>
                             <li><a class="nav-link-ref"  style="font-family: 'PPEiko-Medium' !important;" routerLink="/art-materia">ART</a></li>
                             <li><a class="nav-link-ref"  style="font-family: 'PPEiko-Medium' !important;" routerLink="/materia-decor"> HOME DECOR</a></li>
@@ -143,9 +148,9 @@
                       <div class="cerrar"  id ="cerrart"> <a href ="javascript:cerrar()"> </a><!--<img src="assets/images/x1.png">--></div>
                       <li  style="width: 33%; border-right: 1px solid rgb(151, 150, 150);">
                         <div class="contenedor3">
-                        <ul >
+                        <ul class=submenu-tres>
                           <li class="productdesign megamenu-head"  style="color: white !important" >PRODUCT DESIGN</li>
-                          <li><a class="nav-link-ref" routerLink="/portfolio-masonry-two">PORTFOLIO</a></li>
+                          <li><a class="nav-link-ref" routerLink="/product-portfolio">PRODUCT DESIGN PORTFOLIO</a></li>
                           <li><a class="nav-link-ref" routerLink="">CUSTOM-MAKE YOUR OWN PIECE</a></li>
                         </ul>
                       </div>
@@ -153,19 +158,19 @@
                   
                       <li style="width: 33%; border-right: 1px solid rgb(151, 150, 150);" >
                         <div class="contenedor4" style="background-color: #ffffff ">
-                        <ul>
+                        <ul class=submenu-cuatro>
                           <li class="interiordesign megamenu-head"   style="color: white !important;" >INTERIOR DESIGN</li>
-                          <li><a class="nav-link-ref" routerLink="/portfolio-masonry-two">PORTFOLIO</a></li>
+                          <li><a class="nav-link-ref" routerLink="/interior-portfolio">INTERIOR DESIGN PORTFOLIO</a></li>
                           <li><a class="nav-link-ref" routerLink="/portfolio-masonry-three">CREATE YOUR DREAM SPACE</a></li>
                         </ul>
                       </div>
                       </li>
                       <li style="width: 32%;">
                         <div class="contenedor5" style="background-color: #ffffff ">
-                        <ul>
+                        <ul class=submenu-cinco>
                           <li class="art megamenu-head"  style="color: white !important;">ART</li>
-                          <li><a class="nav-link-ref" routerLink="/portfolio-masonry-two">PORTFOLIO</a></li>
-                          <li><a class="nav-link-ref" routerLink="/custome-made">COMMISION ART</a>
+                          <li><a class="nav-link-ref" routerLink="/portfolio-masonry-two">CUSTOM ART PORTFOLIO</a></li>
+                          <li><a class="nav-link-ref" routerLink="/custome-made">CUSTOM-MADE ART</a>
                         </ul>
                       </div>
                       </li>
@@ -173,18 +178,18 @@
                     
                   </li>
                   <li><a routerLink="/aboutus" class="nav-link-ref" style="font-family: 'PPEiko-Medium' !important;">ABOUT</a> </li> <span class="menu-arrow"></span> 
+                 <ul class="wish"> 
+                  <li class="list-inline-item mb-0 pe-1">
+                    <img src="assets/images/work/wish.png" alt= "image" width= "19" height="19" href="javascript:void(0);"  (click)="wishListModal(content)">
+                  </li>
+                 </ul>
                   <ul class="buy-button list-inline mb-0" >
-    
-                    <li class="list-inline-item mb-0 pe-1">
-                      <a href="javascript:void(0);" class="btn btn-icon btn-soft-primary" (click)="wishListModal(content)"><i
-                          class="uil uil-heart align-middle icons"></i></a>
-                    </li>
-
                     <li  style="font-family: 'PPEiko-Medium' !important;" class=" list-inline-item mb-0 pe-1">
                       <div class="dropdown" ngbDropdown>
-                        <button type="button" class="btn btn-icon btn-soft-primary dropdown-toggle" ngbDropdownToggle data-bs-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false"><i
-                            class="uil uil-shopping-cart align-middle icons"></i></button>
+                        <a href="" class="rounded">
+                        </a>
+                        <img  src="assets/images/work/carrito.png" alt= "image" width= "19" height="19" class="dropdown-toggle" ngbDropdownToggle data-bs-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 p-4" ngbDropdownMenu
                           style="width: 300px;">
                           <div class="pb-4">

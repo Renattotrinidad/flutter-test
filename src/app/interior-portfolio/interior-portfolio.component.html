@@ -1,0 +1,58 @@
+
+<!-- Hero Start -->
+
+<div class="bg-half  d-table w-100 row justify-content-center" id="home">
+    <div class="col-lg-12 text-center">
+        <h4 class="title"  style="font-family: 'PPEiko-Medium' !important;">Interior Design Portfolio<br></h4>
+        <h5 class="title"  style="font-family: 'PPEiko-Thin' !important;">We love creating entire spaces for a client, we take what they desire and turn it into a real possibility with ease, love, and creativity.</h5>    
+    </div>
+    <!--end col-->
+  </div>
+  <!--end row-->
+
+<!-- Work Start -->
+
+
+
+<!-- Work Start -->
+<section class="marg">
+    <div class="">
+        <div id="grid" class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["branding"]'  routerLink="/detail-two"
+                *ngFor="let item of filterredImages">
+                <div class="card work-container work-modern position-relative overflow-hidden shadow rounded border-0">
+                    <div class="card-body p-0">
+                        <img  src="{{item.image}}"  class="img-fluid rounded" alt="work-image">
+                        <div class="overlay-work bg-dark"></div>
+                        <div class="content">
+                            <a routerLink="/portfolio-detail-one"
+                                class="title text-white d-block fw-bold">{{item.title}}</a>
+                             <small class="text-light">{{item.type}}</small>
+                        </div>
+                        <div class="client">
+                            <small class="text-light user d-block"><i class="uil uil-user"></i> {{item.name}}</small>
+                            <small class="text-light date"><i class="muil uil-calendar-alt"></i> {{item.date}}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+
+        <!-- PAGINATION START -->
+     
+        <!--end row-->
+        <!-- PAGINATION END -->
+
+    </div>
+    <!--end container-->
+</section>
+<!--end section-->
+<!-- Work End -->
+
+<!-- Back to top -->
+<a href="javascript: void(0);" class="btn btn-icon btn-primary back-to-top" id="back-to-top" [ngxScrollTo]="'#home'">
+    <i-feather name="arrow-up" class="icons"></i-feather>
+</a>
+<!-- Back to top -->

@@ -24,6 +24,7 @@ import { IndexMateriaDecorComponent } from './index-materia-decor/index-materia-
 import { IndexShopFurnitureComponent } from './index-shop-furniture/index-shop-furniture.component';
 import { IndexShopWallComponent } from './index-shop-wall/index-shop-wall.component';
 import { IndexUpcycledComponent } from './index-upcycled/index-upcycled.component';
+import { InteriorPortfolioComponent } from './interior-portfolio/interior-portfolio.component';
 import { ShopAccesoriesComponent } from './shop-accesories/shop-accesories.component';
 import { ShopAccesoriesMateriaComponent } from './shop-accesories-materia/shop-accesories-materia.component';
 import { ShopArtMateriaComponent } from './shop-art-materia/shop-art-materia.component';
@@ -32,7 +33,7 @@ import { ShopMatersantDecorComponent } from './shop-matersant-decor/shop-matersa
 import { ShopMatersantFinishingComponent } from './shop-matersant-finishing/shop-matersant-finishing.component';
 import { DetailTwoComponent } from './detail-two/detail-two.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
-
+import { ProductPortfolioComponent } from './product-portfolio/product-portfolio.component';
 const routes: Routes = [
   {
     path: '',
@@ -71,7 +72,8 @@ const routes: Routes = [
       { path: 'matersant-finishing', component:ShopMatersantFinishingComponent } ,
       { path: 'detail-two', component: DetailTwoComponent },
       { path: 'wishlist', component: WishlistComponent },
-      
+      { path: 'interior-portfolio', component: InteriorPortfolioComponent },
+      { path: 'product-portfolio', component: ProductPortfolioComponent },
     ]
   },
 
