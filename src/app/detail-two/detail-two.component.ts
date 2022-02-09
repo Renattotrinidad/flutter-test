@@ -55,9 +55,9 @@ export class DetailTwoComponent implements OnInit {
    ngOnInit(): void {
      
     
-    this.filterredImages = this.list1;
-    this.filterredImages = this.list2;
-    this.filterredImages = this.list3;
+    this.filterredImages = this.list1; 
+    this.filterredImages = this.list2; 
+    this.filterredImages = this.list3; 
     this.filterredImages = this.list4;
    }
 
@@ -117,7 +117,7 @@ export class DetailTwoComponent implements OnInit {
   }
   ];
 
-  list3 = [{
+  list3= [{
     categoryID: 3,
     imageInfo:[
         {
