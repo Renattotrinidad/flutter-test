@@ -1,42 +1,7 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   
   <section class="section pb-0">
-    <div class="related"></div>
-    <div class="">
-      <div class="row align-items-center">
-        <div class="col-md-7">
-          <owl-carousel-o id="customer-testi" [options]="customOptions">
-            <ng-template carouselSlide>
-              <div class="tiny-slide">
-                <div  data-aos="fade-on"  data-aos-duration="3000" class="tiny-slide"><img src="assets/images/portfolio/PRUEBAA.JPG" class="img-fluid rounded"
-                    alt=""></div>
-              </div>
-            </ng-template>
-           
-            
-          </owl-carousel-o>
-        </div>
-        <!--end col-->
-  
-        <div class="col-md-5"  style="font-family: 'PPEiko-Medium' !important;">
-          <div class="section-title ms-md-4">
-            <div class="padding">
-            <h5 class="text-muted"  style="font-family: 'PPEiko-Medium' !important;">TEXTO QUE SE DESEA AGREGAR </h5>
-            <br> <br>
-            <p class="text"  style="font-family: 'PPEiko-Medium' !important;">Descripcion del producto </p>
-            <br> <br> <br> <br> <br> <br>
-            <br> 
-          </div>
-          </div>
-        </div>
-        
-        <!--end col-->
-      </div>
-      <!--end row-->
-    </div>
-    <!--end container-->
-    <br><br>
-    <section class="marg">
+   
       <div id="grid" class="row">
           <div class="col-lg-9 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["branding"]' 
               *ngFor="let item of filteredImages">
@@ -58,6 +23,16 @@
           </div>
           <!--end col-->
       </div>
+      <div class="col-md-5"  style="font-family: 'PPEiko-Medium' !important;">
+        <div class="section-title ms-md-4">
+          <div class="padding">
+          <br> <br>
+          <p class="text"  style="font-family: 'PPEiko-Medium' !important;">Descripcion del producto </p>
+          <br> <br> <br> <br> <br> <br>
+          <br> 
+        </div>
+        </div>
+      </div>
       <!--end row-->
 
       <!-- PAGINATION START -->
@@ -66,8 +41,7 @@
 </section>
 
     
-    <!--end container-->
-  </section>
+  
   <!--end section-->
   
   <!-- Back to top -->

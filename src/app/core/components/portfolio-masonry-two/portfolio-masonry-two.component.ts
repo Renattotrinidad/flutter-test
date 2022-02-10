@@ -35,12 +35,10 @@ export class PortfolioMasonryTwoComponent implements OnInit {
   },
  
   {
-    image: 'assets/images/work/5.jpg',
-    title: 'Dancing With Myself',
-    type: 'Photography',
-    category: 'branding',
-    name: 'Calvin Carlo',
-    date: '13th August, 2019'
+    galleryId:  4 ,
+    imageName: "jamesport",
+    image: 'assets/images/portfolio/PRUEBAA.JPG',
+    title: 'Wall Street Manhattan',
   },
   {
     image: 'assets/images/work/6.jpg',

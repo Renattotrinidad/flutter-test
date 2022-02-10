@@ -111,12 +111,74 @@ export class DetailTwoComponent implements OnInit {
         imageURL: "assets/images/portfolio/2-jamesport-2.JPG",
       },
     ];
+    let list3 = [
+          {
+            imageName: "3-spirito-1",
+            imageURL: "assets/images/portfolio/3-spirito-1.JPG",
+          },
+          {
+            imageName: "3-spirito-2",
+            imageURL: "assets/images/portfolio/3-spirito-2.JPG",
+          },
+          {
+            imageName: "3-spirito-3",
+            imageURL: "assets/images/portfolio/3-spirito-3.JPG",
+          },
+          {
+            imageName: "3-spirito-4",
+            imageURL: "assets/images/portfolio/3-spirito-4.JPG",
+          },
 
+    ];
+  
+    let list4 = [
+    
+          {
+            imageName: "4-manhattan-1",
+            imageURL: "assets/images/portfolio/4-manhattan-1.JPG",
+          },
+          {
+            imageName: "4-manhattan-2",
+            imageURL: "assets/images/portfolio/4-manhattan-2.jpg",
+          },
+          {
+            imageName: "4-manhattan-3",
+            imageURL: "assets/images/portfolio/4-manhattan-3.JPG",
+          },
+          {
+            imageName: "4-manhattan-4",
+            imageURL: "assets/images/portfolio/4-manhattan-4.jpg",
+          },
+          {
+            imageName: "4-manhattan-5",
+            imageURL: "assets/images/portfolio/4-manhattan-5.jpg",
+          },
+          {
+            imageName: "4-manhattan-6",
+            imageURL: "assets/images/portfolio/4-manhattan-6.jpg",
+          },
+          {
+            imageName: "4-manhattan-7",
+            imageURL: "assets/images/portfolio/4-manhattan-7.jpg",
+          },
+          {
+            imageName: "4-manhattan-8",
+            imageURL: "assets/images/portfolio/4-manhattan-8.jpg",
+          },
+          {
+            imageName: "4-manhattan-9",
+            imageURL: "assets/images/portfolio/4-manhattan-9.JPG",
+          },
+    ];
     if(galleryId == 1){
       this.filteredImages = list1;
     }else if (galleryId == 2){
       this.filteredImages = list2;
-    }
+   }else if (galleryId == 3){
+    this.filteredImages = list3;
+   }else if (galleryId == 4){
+  this.filteredImages = list4;
+  }
   }
 
 
@@ -124,71 +186,5 @@ export class DetailTwoComponent implements OnInit {
 
 
 
-  list3 = [
-    {
-      categoryID: 3,
-      imageInfo: [
-        {
-          imageName: "3-spirito-1",
-          imageURL: "assets/images/portfolio/3-spirito-1.JPG",
-        },
-        {
-          imageName: "3-spirito-2",
-          imageURL: "assets/images/portfolio/3-spirito-2.JPG",
-        },
-        {
-          imageName: "3-spirito-3",
-          imageURL: "assets/images/portfolio/3-spirito-3.JPG",
-        },
-        {
-          imageName: "3-spirito-4",
-          imageURL: "assets/images/portfolio/3-spirito-4.JPG",
-        },
-      ],
-    },
-  ];
 
-  list4 = [
-    {
-      categoryID: 4,
-      imageInfo: [
-        {
-          imageName: "4-manhattan-1",
-          imageURL: "assets/images/portfolio/4-manhattan-1.JPG",
-        },
-        {
-          imageName: "4-manhattan-2",
-          imageURL: "assets/images/portfolio/4-manhattan-2.JPG",
-        },
-        {
-          imageName: "4-manhattan-3",
-          imageURL: "assets/images/portfolio/4-manhattan-3.JPG",
-        },
-        {
-          imageName: "4-manhattan-4",
-          imageURL: "assets/images/portfolio/4-manhattan-4.JPG",
-        },
-        {
-          imageName: "4-manhattan-5",
-          imageURL: "assets/images/portfolio/4-manhattan-5.JPG",
-        },
-        {
-          imageName: "4-manhattan-6",
-          imageURL: "assets/images/portfolio/4-manhattan-6.JPG",
-        },
-        {
-          imageName: "4-manhattan-7",
-          imageURL: "assets/images/portfolio/4-manhattan-7.JPG",
-        },
-        {
-          imageName: "4-manhattan-8",
-          imageURL: "assets/images/portfolio/4-manhattan-8.JPG",
-        },
-        {
-          imageName: "4-manhattan-9",
-          imageURL: "assets/images/portfolio/4-manhattan-9.JPG",
-        },
-      ],
-    },
-  ];
 }
