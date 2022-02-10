@@ -16,27 +16,22 @@ export class PortfolioMasonryTwoComponent implements OnInit {
   
   filterredImages;
   list = [{
-    id:  1 ,
+    galleryId:  1 ,
     imageName: "jamesport",
     image: 'assets/images/portfolio/PRUEBAA.JPG',
     title: 'Wall Street Manhattan',
-    
   },
   {
+    galleryId:  2 ,
+    imageName: "jamesport",
     image: 'assets/images/portfolio/PRUEBAA.JPG',
-    title: 'Jamesport, New York',
-    type: 'Web Design',
-    category: 'designing',
-    name: 'Calvin Carlo',
-    date: '13th August, 2019'
+    title: 'Wall Street Manhattan',
   },
   {
+    galleryId:  3 ,
+    imageName: "jamesport",
     image: 'assets/images/portfolio/PRUEBAA.JPG',
-    title: 'Santo Spirito, Antigua Guatemala',
-    type: 'Developing',
-    category: 'photography',
-    name: 'Calvin Carlo',
-    date: '13th August, 2019'
+    title: 'Wall Street Manhattan',
   },
  
   {

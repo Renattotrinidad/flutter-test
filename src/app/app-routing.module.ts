@@ -70,7 +70,7 @@ const routes: Routes = [
       { path: 'shop-clothing', component:ShopClothingComponent } ,
       { path: 'matersant-decor', component:ShopMatersantDecorComponent } ,
       { path: 'matersant-finishing', component:ShopMatersantFinishingComponent } ,
-      { path: 'detail-two', component: DetailTwoComponent },
+      { path: 'detail-two/:galleryId', component: DetailTwoComponent },
       { path: 'wishlist', component: WishlistComponent },
       { path: 'interior-portfolio', component: InteriorPortfolioComponent },
       { path: 'product-portfolio', component: ProductPortfolioComponent },

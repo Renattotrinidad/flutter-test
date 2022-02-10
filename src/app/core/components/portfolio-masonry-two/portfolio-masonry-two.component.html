@@ -12,14 +12,14 @@
 <!-- Work Start -->
 <section class="marg">
         <div id="grid" class="row">
-            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["branding"]'  routerLink="/detail-two"
-                *ngFor="let item of filterredImages">
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["branding"]'  
+                routerLink="/detail-two/{{item.galleryId}}" *ngFor="let item of filterredImages">
                 <div class="card work-container work-modern position-relative overflow-hidden shadow rounded border-0">
                     <div class="card-body p-0">
                         <img  src="{{item.image}}"  class="img-fluid rounded" alt="work-image">
                         <div class="overlay-work bg-dark"></div>
                         <div class="content">
-                            <a routerLink="/portfolio-detail-one"
+                            <a routerLink="/detail-two/{{item.galleryId}}"
                                 class="title text-white d-block fw-bold">{{item.title}}</a>
                              <small class="text-light">{{item.type}}</small>
                         </div>
