@@ -1,12 +1,31 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   
   <section class="section pb-0">
-   
+    <div class="related"></div>
+    <div class="">
+    
+      <!--end row-->
+    </div>
+    
+    <section class="marg">
+       <!--end row--
+      <div class="row align-items-center">
+        <div class="col-md-2"  style="font-family: 'PPEiko-Medium' !important;">
+          <div class="section-title ms-md-4">
+            
+            <h5 class="text-muted"  style="font-family: 'PPEiko-Medium' !important;">TEXTO QUE SE DESEA AGREGAR </h5>
+            <br> <br>
+            <p class="text"  style="font-family: 'PPEiko-Medium' !important;">Descripcion del producto </p>
+          
+          </div>
+        </div>
+      </div>
+       end row-->
+
       <div id="grid" class="row">
-          <div class="col-lg-9 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["branding"]' 
+          <div class="col-lg-8 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["branding"]' 
               *ngFor="let item of filteredImages">
-              <div class="card work-container work-modern position-relative overflow-hidden shadow rounded border-0">
-                  <div class="card-body p-0">
+                  
                       <img  src="{{item.imageURL}}"  class="img-fluid rounded" alt="work-image">
                       <div class="overlay-work bg-dark"></div>
                       <div class="content">
@@ -18,30 +37,16 @@
                           <small class="text-light user d-block"> {{item.name}}</small>
                           <small class="text-light date">{{item.date}}</small>
                       </div>
-                  </div>
-              </div>
+               
           </div>
           <!--end col-->
       </div>
-      <div class="col-md-5"  style="font-family: 'PPEiko-Medium' !important;">
-        <div class="section-title ms-md-4">
-          <div class="padding">
-          <br> <br>
-          <p class="text"  style="font-family: 'PPEiko-Medium' !important;">Descripcion del producto </p>
-          <br> <br> <br> <br> <br> <br>
-          <br> 
-        </div>
-        </div>
-      </div>
-      <!--end row-->
-
-      <!-- PAGINATION START -->
-   
-      <!--end row-->
+      
 </section>
 
     
-  
+    <!--end container-->
+  </section>
   <!--end section-->
   
   <!-- Back to top -->
