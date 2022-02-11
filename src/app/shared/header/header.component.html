@@ -183,7 +183,7 @@
                   <li><a routerLink="/aboutus" class="nav-link-ref" style="font-family: 'PPEiko-Medium' !important;">ABOUT</a> </li> <span class="menu-arrow"></span> 
                  <ul class="wish"> 
                   <li class="list-inline-item mb-0 pe-1">
-                    <img src="assets/images/work/wish.png" alt= "image" width= "19" height="19" href="javascript:void(0);"  (click)="wishListModal(content)">
+                    <img src="assets/images/work/wish.png" alt= "image" width= "20" height="20" href="javascript:void(0);"  (click)="wishListModal(content)">
                   </li>
                  </ul>
                   <ul class="buy-button list-inline mb-0" >
@@ -191,7 +191,7 @@
                       <div class="dropdown" ngbDropdown>
                         <a href="" class="rounded">
                         </a>
-                        <img  src="assets/images/work/carrito.png" alt= "image" width= "19" height="19" class="dropdown-toggle" ngbDropdownToggle data-bs-toggle="dropdown"
+                        <img  src="assets/images/work/carrito.png" alt= "image" width= "20" height="19" class="dropdown-toggle" ngbDropdownToggle data-bs-toggle="dropdown"
                           aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 p-4" ngbDropdownMenu
                           style="width: 300px;">
@@ -203,21 +203,21 @@
                                 <p class="text-muted mb-0" style="font-family: 'PPEiko-thin' !important;">Información</p>
                                 <p class="text-muted mb-0" style="font-family: 'PPEiko-thin' !important;">$320</p>
                               </div>
-                              
                             </a>
-            
-                            <td class="text-center qty-icons" >
-                              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                class="btn btn-icon btn-soft-primary minus">-</button>
-                              <input min="0" name="quantity" value="7" type="number"
-                                class="btn btn-icon btn-soft-primary qty-btn quantity m-1">
-                              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                class="btn btn-icon btn-soft-primary plus">+</button>
-                            </td>
             
 
                           </div>
-            
+                          <tr class="shop-list" >
+                            <td class="text-center qty-icons" >
+                              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="">-</button>
+                              <input min="0" name="quantity" value="1" type="number"
+                                class="qty-btn quantity m-1">
+                              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="">+</button>
+                            </td>
+                          </tr>
+
                           <div class="d-flex align-items-center justify-content-between pt-4 border-top">
                             <h6 class="text-dark mb-0"  style="font-family: 'PPEiko-Medium' !important;">Total($):</h6>
                             <h6 class="text-dark mb-0"  style="font-family: 'PPEiko-Medium' !important;">$1690</h6>

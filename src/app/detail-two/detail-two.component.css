@@ -1,6 +1,9 @@
 .paddin{
     padding-bottom: 25%;
 }
+.marg{
+    padding-bottom: 100px;
+}
 .botones{
     text-decoration: none;
     border: 1px solid #000;
