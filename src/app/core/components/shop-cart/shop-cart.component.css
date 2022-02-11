@@ -6,6 +6,9 @@ border:black 2px solid;
     padding-left: 20px;
    
 }
+.colorBoton{
+    background-color: #fff !important;
+}
 .botones{
     text-decoration: none;
     border: 1px solid #000;
