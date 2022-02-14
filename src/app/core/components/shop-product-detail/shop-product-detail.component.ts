@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { SwiperOptions } from 'swiper';
+import { LocalStorageService } from '../../../utils/local-storage.service';
 
 @Component({
   selector: 'app-shop-product-detail',
@@ -12,7 +13,22 @@ import { SwiperOptions } from 'swiper';
  * Shop Product-Detail Component
  */
 export class ShopProductDetailComponent implements OnInit {
+  grabar_localStorage(){
+    let productos = [
+      {
+      
+        imageURL: "assets/images/portfolio/1-portArt-1.JPG",
+        titulo: "titulo",
+        descripcion: "", 
+        precio:"",
+        cantidad:"",
 
+      },
+      
+    ];
+    localStorage.setItem
+
+  }
   /***
    * Header button list show
    */
@@ -20,7 +36,7 @@ export class ShopProductDetailComponent implements OnInit {
 
   model = 1;
 
-  constructor() { }
+  constructor(private localStorageService: LocalStorageService) { }
   public config: SwiperOptions = {
     a11y: { enabled: true },
     direction: 'horizontal',
@@ -80,5 +96,8 @@ export class ShopProductDetailComponent implements OnInit {
     }
   }
 
+  addToCart(product : any): void{
+    this.localStorageService.addProduct(product);
+  }
 }
 

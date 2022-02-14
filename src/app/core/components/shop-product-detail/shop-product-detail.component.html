@@ -28,7 +28,7 @@
             <p class="text"  style="font-family: 'PPEiko-Medium' !important;">Descripcion del producto </p>
             <p class="text"  style="font-family: 'PPEiko-Medium' !important;"> Producción</p>
             <br> <br> <br> <br> <br> <br>
-            <a class="botones" routerLink="/shop-cart" style= "color: black;" >ADD TO CART</a>
+            <button class="botones agregar-carrito" (click)="addToCart({'nombre': 'Articulo 1', 'precio': 150})" style= "color: black;" >ADD TO CART</button>
            <br> 
             <a class="botones" routerLink="/shop-cart" style= "color: black;" >ADD TO WISHLIST</a>
             <br> 

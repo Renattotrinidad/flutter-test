@@ -63,6 +63,7 @@ import { ShopCheckoutsComponent } from './shop-checkouts/shop-checkouts.componen
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { ProductPortfolioComponent } from './product-portfolio/product-portfolio.component';
 import { InteriorPortfolioComponent } from './interior-portfolio/interior-portfolio.component';
+import { UtilsModule } from './utils/utils.module';
 
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
@@ -132,7 +133,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     CountToModule,
     NgxMasonryModule,
     LightboxModule,
-    SharedModule
+    SharedModule,
+    UtilsModule
   ],
   exports: [
     FeatherModule,

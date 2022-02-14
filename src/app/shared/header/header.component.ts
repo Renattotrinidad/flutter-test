@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { Router, NavigationEnd } from "@angular/router";
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { LocalStorageService } from '../../utils/local-storage.service';
 
 @Component({
   selector: "app-header",
@@ -19,8 +20,8 @@ export class HeaderComponent implements OnInit {
   @Input() isdeveloper: boolean;
   @Input() shopPages: boolean;
 
-
-  constructor(private router: Router, private modalService: NgbModal) {
+  products: any[];
+  constructor(private router: Router, private modalService: NgbModal, private localStorageService: LocalStorageService) {
     this.router.events.forEach((event) => {
       if (event instanceof NavigationEnd) {
         this._activateMenuDropdown();
@@ -35,6 +36,8 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.products = this.localStorageService.getItem('products');
+    console.log(this.products)
   }
   cerrar(){
     document.getElementById("cerrart").style.display="none";
