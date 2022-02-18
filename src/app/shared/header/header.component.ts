@@ -32,7 +32,7 @@ export class HeaderComponent implements OnInit {
   isCondensed = false;
 
   ngAfterViewInit() {
-    this._activateMenuDropdown();
+    this._activateMenuDropdown(); 
   }
 
   ngOnInit(): void {
